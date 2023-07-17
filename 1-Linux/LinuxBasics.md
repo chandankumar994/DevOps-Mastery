@@ -1,6 +1,6 @@
 # Linux Basics
 
-![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/f95b192c-0e23-4a3e-9b02-f7de28d756aa)
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/588a3854-fbef-4f8d-828e-f6f643f439eb)
 
 
 ## What is Linux and why it is important in DevOps journey?
