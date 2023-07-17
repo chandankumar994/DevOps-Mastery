@@ -1,6 +1,9 @@
 # What is DevOps
 In simple word Devops means everything which is improving your release cycle including Development , testing , deployment with high stability , high speed infrastructure and with less complexities .
 
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/bcc07327-d770-49c0-9026-45f5156a4344)
+
+
 ## Why DevOps ?
 The software industry is growing at the speed of light, but software delivery in IT firm is suffering from a lack of department integration. Problems are lobbed over the wall across the team and process is suffering. As a developer, you need to wait for work to get aligned with production and operation team. Moreover, most recurring challenges for developers to balance pending and new codes along with errors solving when new code is pushed into the production environment. Here DevOps helps you get the job done.
 
