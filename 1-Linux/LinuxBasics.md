@@ -1,5 +1,8 @@
 # Linux Basics
 
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/f95b192c-0e23-4a3e-9b02-f7de28d756aa)
+
+
 ## What is Linux and why it is important in DevOps journey?
 Linux is an open-source operating system kernel that serves as the foundation for numerous Unix-like operating systems. It was created by Linus Torvalds in 1991 and has since become one of the most popular operating systems in the world, powering a wide range of devices, from servers and desktop computers to smartphones and embedded systems.
 
