@@ -29,6 +29,9 @@ With implementing DevOps culture you can make your product more stable , secure 
 ## Who can be a good DevOps Engineer ?
 The one who has quality and understanding about above best practices and complete understanding about how code is deploying into production can become a good DevOps Engineer.
 
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/735cd57a-6cf5-451d-9b45-6f9dcc1c2602)
+
+
 ## What things you need to learn if you want to move your career into DevOps ?
 If you want to start with DevOps you can start learning about below things, I will explain below topic in comming notes.
 * Basic Linux commands .
