@@ -68,6 +68,9 @@ If you want to start with DevOps you can start learning about below things, I wi
 * Keep HandsOn about application setup .
 
 # Benefits of DevOps :
+
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/2faf2be2-194a-4e75-b0aa-4d2d6d18507e)
+
 * Improve operational support and faster releases .
 * Good process across IT and Teams , including automation .
 * Increasing team flexibility and agility .
