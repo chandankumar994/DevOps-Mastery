@@ -18,6 +18,12 @@ Ans:
 Ans: 
 #### Question-4: Disk is full of logs and you deleted the logs from log folder, then why machine is stll showing not enough space, how you will release the memory of disk without reebooting the machine?
 Ans: 
+#### Question-5: How to replace word "2022" with "2023" into all file (including sub folders) using shell scripting ?
+Ans:
+
+
+
+
 
 ### Section-2 (GIT - SCM tool)
 
@@ -102,11 +108,16 @@ Ans:
 ### Section-9 (Docker)
 #### Question-1: How you will optimize docker image size, which is around 10 GB ?
 Ans: 
-#### Question-1: What is docker multi-stage build any why we use it ?
+#### Question-2: What is docker multi-stage build any why we use it ?
 Ans: 
 
 ### Section-10 (Kubernetes)
 
 ### Section-11 (Grafana and Prometheous)
 
+
+
+### Section-12 (Scenario based Question)
+#### Question-1: Is there any critical issue where you play a major role to fix that issue ?
+Ans: 
 
