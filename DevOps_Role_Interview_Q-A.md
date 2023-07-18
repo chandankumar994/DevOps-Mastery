@@ -1,14 +1,14 @@
 # Interview Question and Answers (Which I faced in interview).
 ## Role - DevOps Engineer 
 
-### Section-0 (Very Important, because this question will decide the interview side)
+### 🚀Section-0 (Very Important, because this question will decide the interview side)🚀
 
 #### Question-1: Tell me about yourself and explain your day to day activities ?
 #### Question-2: Tell me about yourself and which project you are working and what are your role and responsibilities ?
 Ans: **Note** Please be very carefull while answering this question, because this question's answer will decide the interview's future..
 
 
-### Section-1 (Linux)
+### 🚀Section-1 (Linux)🚀
 
 #### Question-1: Explain file system architecture of Linux OS ?
 Ans: 
@@ -25,12 +25,12 @@ Ans:
 
 
 
-### Section-2 (GIT - SCM tool)
+### 🚀Section-2 (GIT - SCM tool)🚀
 
 
 
 
-### Section-3 (CI/CD - Build and releases)
+### 🚀Section-3 (CI/CD - Build and releases)🚀
 #### Question-1: Explain the build pipeline stages which you have worked or working on ?
 Ans: 
 #### Question-2: What is the "POM.xml" file in java based appliction, and what are the important information a devops engineer need from POM.xml to build this java project ?
@@ -48,14 +48,14 @@ Ans:
 
 
 
-### Section-4 (Cloud AWS/Azure)
+### 🚀Section-4 (Cloud AWS/Azure)🚀
 #### Question-1: How you will retrive password if lost password for virtual machine ?
 Ans: 
 
 
 
 
-### Section-5 (Azure DevOps)
+### 🚀Section-5 (Azure DevOps)🚀
 #### Question-1: How to add multiple user in Azure DevOps?
 Ans:
 #### Question-2: How to migrate items from jira to Azure DevOps?
@@ -97,27 +97,27 @@ Ans:
 
 
 
-### Section-6 (Jenkins)
+### 🚀Section-6 (Jenkins)🚀
 
-### Section-7 (Ansible)
+### 🚀Section-7 (Ansible)🚀
 
-### Section-8 (terraform)
+### 🚀Section-8 (terraform)🚀
 #### Question-1: How to provision infrastructure for any subscription within azure using terraform?
 Ans: 
 
-### Section-9 (Docker)
+### 🚀Section-9 (Docker)🚀
 #### Question-1: How you will optimize docker image size, which is around 10 GB ?
 Ans: 
 #### Question-2: What is docker multi-stage build any why we use it ?
 Ans: 
 
-### Section-10 (Kubernetes)
+### 🚀Section-10 (Kubernetes)🚀
 
-### Section-11 (Grafana and Prometheous)
+### 🚀Section-11 (Grafana and Prometheous)🚀
 
 
 
-### Section-12 (Scenario based Question)
+### 🚀Section-12 (Scenario based Question)🚀
 #### Question-1: Is there any critical issue where you play a major role to fix that issue ?
 Ans: 
 
