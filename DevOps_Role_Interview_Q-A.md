@@ -15,7 +15,7 @@ Ans:
 #### Question-2: Explain file and folder permission architecture in Linux?
 Ans: 
 #### Question-3: Where you will check event log in Linux OS?
-Ans: 
+Ans: Use "journalctl" command
 #### Question-4: Disk is full of logs and you deleted the logs from log folder, then why machine is stll showing not enough space, how you will release the memory of disk without reebooting the machine?
 Ans: 
 #### Question-5: How to replace word "2022" with "2023" into all file (including sub folders) using shell scripting ?
@@ -51,7 +51,8 @@ Ans:
 ### 🚀Section-4 (Cloud AWS/Azure)🚀
 #### Question-1: How you will retrive password if lost password for virtual machine ?
 Ans: 
-
+#### Question-2: How you will create 3 tier architecture application, what all components you will use (Draw the architecture) ?
+Ans: 
 
 
 
