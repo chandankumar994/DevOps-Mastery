@@ -39,7 +39,7 @@ Ans:
 Ans: 
 #### Question-4: Wht we use "Maven clean build" in the build pipeline ?
 Ans: 
-#### Question-5: What is the difference between "Maven clean build" and "maven clean install" ?
+#### Question-5: What is the difference between `maven clean build` and `maven clean install` ?
 Ans: 
 #### Question-6: What is multi-branching pipeline ?
 Ans: 
