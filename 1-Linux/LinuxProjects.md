@@ -20,7 +20,7 @@ Now, you can run the script to gather CPU and memory utilization information:
 ./createfile.sh
 ```
 
-### Peoject-2 Write a bash shell script to get all the CPU and memory utilization into an output.txt file?
+### Project-2 Write a bash shell script to get all the CPU and memory utilization into an output.txt file?
 ```
 #!/bin/bash
 
