@@ -1,6 +1,6 @@
 ## Projects
 
-### Peroject-1 Write a bash shell script a folder and two files inside that folder?
+### Peroject-1 Write a bash shell script to create a folder and two files inside that folder?
 ```
 #!/bin/bash
 
