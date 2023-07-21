@@ -1,4 +1,26 @@
-### Peoject-1 Write a bash shell script to get all the CPU and memory utilization into an output.txt file?
+## Projects
+
+### Peroject-1 Write a bash shell script a folder and two files inside that folder?
+```
+#!/bin/bash
+
+# Create folder
+mkdir chandan
+
+# create two files in 'chandan' folder
+cd chandan
+touch file1.txt file2.txt
+```
+Save the script in a file, e.g., createfile.sh. Then, make the script executable using the following command:
+```
+chmod +x createfile.sh
+```
+Now, you can run the script to gather CPU and memory utilization information:
+```
+./createfile.sh
+```
+
+### Peoject-2 Write a bash shell script to get all the CPU and memory utilization into an output.txt file?
 ```
 #!/bin/bash
 
