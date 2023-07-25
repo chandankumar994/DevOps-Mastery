@@ -47,7 +47,7 @@ Ans: **Note** Please be very carefull while answering this question, because thi
 Ans: 
 #### Question-3: Where you will check event log in Linux OS?
 Ans: Use `journalctl` command to see the current event log and We can also check the logs under `var/log/` dir.
-#### Question-4: Disk is full of logs and you deleted the logs from log folder, then why machine is stll showing not enough space, how you will release the memory of disk without reebooting the machine?
+#### Question-4: Disk is full of logs and you deleted the logs from log folder, then why machine is still showing not enough space, how you will release the memory of disk without rebooting the machine?
 Ans: 
 #### Question-5: How to replace word "2022" with "2023" into all file (including sub folders) using shell scripting ?
 Ans: using sed command this can be acieved.
@@ -59,6 +59,34 @@ sed -i "s/2022/2023/g" *.*
 sed -i "s/Sunday/Monday/g" *.*
 Note: Sunday is old value and Monday is new value (which we want to replace with)
 ```
+#### Question-6: How to remove files and its directory ?
+Ans:
+```
+rm -rf <dir-path>
+```
+#### Question-7: What is `grep` command, and how to use it ?
+Ans: `grep` stands for Global Regular Expression Print, basically we use 'grep' command to perform operation in Linux.
+Example: 
+```
+# Below is the command to search those lines which contains ERROR.
+grep 'ERROR' file1.txt
+```
+#### Question-8: What is `find` command, and how to use it ?
+Ans: `find` command also used to perform search operation in linux.
+Example:
+```
+find <expression> <path>
+find *.log /var/log
+finf *.txt .
+```
+
+
+
+
+
+
+
+
 
 ### 🚀Section-2 (GIT - SCM tool)🚀
 
