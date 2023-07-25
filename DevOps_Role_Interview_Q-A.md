@@ -47,7 +47,7 @@ Ans: **Note** Please be very carefull while answering this question, because thi
 Ans: 
 #### Question-3: Where you will check event log in Linux OS?
 Ans: Use `journalctl` command to see the current event log and We can also check the logs under `var/log/` dir.
-#### Question-4: Disk is full of logs and you deleted the logs from log folder, then why machine is still showing not enough space, how you will release the memory of disk without rebooting the machine?
+#### Question-4: Disk is full of logs and you deleted the logs around 10 Gib from log folder, and machine is still showing not enough space, how you will release the memory of disk without rebooting the machine?
 Ans: use `sudo sync` command, for example:
 ```
 sudo sync; echo 1 | sudo tee /proc/sys/vm/drop_caches
@@ -125,6 +125,31 @@ netstat -ano | grep 8080
 
 ### 🚀Section-2 (GIT - SCM tool)🚀
 
+#### Question-1: What is git ?
+**Ans:** GIT is a distributed version control system.
+
+#### Question-2: What is difference between GIT and GitHub ?
+**Ans:**
+
+#### Question-3: What is difference between `git pull` and `git fetch` ?
+**Ans:** 
+
+#### Question-4: What is `git stash` command ?
+**Ans:**
+
+#### Question-5: What is `git rebase` command and when we use it ?
+**Ans:**
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -147,10 +172,77 @@ Ans:
 
 
 ### 🚀Section-4 (Cloud AWS/Azure)🚀
-#### Question-1: How you will retrive password if lost password for virtual machine ?
-Ans: 
-#### Question-2: How you will create 3 tier architecture application, what all components you will use (Draw the architecture) ?
-Ans: 
+#### Question-1: What are the services you have worked in AWS ?
+**Ans:**
+
+#### Question-2: How you will retrive password if password is lost for any virtual machine ?
+**Ans:** 
+
+#### Question-3: How you will create 3 tier architecture application, what all components you will use (Draw the architecture) ?
+**Ans:** 
+
+#### Question-4: How many types of EC2 instances we are having based on costs ?
+**Ans:** 
+
+#### Question-5: What is the difference between 'on-demand' and 'reserved' instance ?
+**Ans:** 
+
+#### Question-6: What is load balancer and why we use it ?
+**Ans:**
+
+#### Question-7: What is the difference between application and network load balancer ?
+**Ans:**
+
+#### Question-8: What is horizental and vertical scaling in AWS ?
+**Ans:**
+
+#### Question-9: Which loadbalancer is suitable for 'Live-BroadCasting' ?
+**Ans:**
+
+#### Question-10: What kis the difference between TCP and UDP protocol ?
+**Ans:**
+
+#### Question-11: What is VPC ?
+**Ans:**
+
+#### Question-12: What is the difference between Internet-Gateway and Nat-Gateway ?
+**Ans:**
+
+#### Question-13: If any server is hosted on private subnet, then how this server will communicate with external internet ?
+**Ans:**
+
+#### Question-14: What is Cloud-Watch service and why we use it ?
+**Ans:**
+
+#### Question-15: What is RDS service ?
+**Ans:**
+
+#### Question-16: How to configure SNS (Simple Notification Service) ?
+**Ans:**
+
+#### Question-17: 
+**Ans:**
+
+#### Question-18: 
+**Ans:**
+
+#### Question-19: 
+**Ans:**
+
+#### Question-20: 
+**Ans:**
+
+#### Question-21: 
+**Ans:**
+
+#### Question-22: 
+**Ans:**
+
+#### Question-23: 
+**Ans:**
+
+#### Question-24: 
+**Ans:**
 
 
 
@@ -192,17 +284,58 @@ Ans:
 #### Question-1: 
 Ans:
 #### Question-1: 
-Ans:
+**Ans:**
 
 
 
 ### 🚀Section-6 (Jenkins)🚀
+#### Question-1: What is Jenkins?
+**Ans:**
+
+#### Question-2: How to backup Jenkins server with existing data and pipeline ?
+**Ans:**
+
+#### Question-3: What are agents in jenkins?
+**Ans:**
+
+#### Question-4: Why we use agent command in jenkins file ?
+**Ans:**
+
+#### Question-5: What is the difference between environment variable and parameter in Jenkins ?
+**Ans:**
+
+#### Question-6: What is the difference between pre-defined and user-defined variables in Jenkins ?
+**Ans:**
+
+#### Question-7: Why we use `test` and `choice` parameter in jenkins ?
+**Ans:**
+
+#### Question-8: What is `section` argument in Jenkins ?
+**Ans:**
+
+#### Question-9: 
+**Ans:**
 
 ### 🚀Section-7 (Ansible)🚀
 
 ### 🚀Section-8 (terraform)🚀
 #### Question-1: How to provision infrastructure for any subscription within azure using terraform?
-Ans: 
+**Ans:** 
+
+#### Question-2: What is state file locking in terraform ?
+**Ans:** 
+
+#### Question-3: How to create ECS and RDS clusted using terraform ?
+**Ans:**
+
+#### Question-4: 
+**Ans:**
+
+#### Question-5: 
+**Ans:**
+
+#### Question-6: 
+**Ans:**
 
 ### 🚀Section-9 (Docker)🚀
 #### Question-1: How you will optimize docker image size, which is around 10 GB ?
