@@ -11,7 +11,7 @@ Ans: **Note** Please be very carefull while answering this question, because thi
 ### 🚀Section-1 (Linux)🚀
 
 #### Question-1: Explain file system architecture of Linux OS ?
-Ans: The file system architecture of a Linux operating system is a hierarchical structure that organizes and manages files, directories, and other data on storage devices such as hard drives and SSDs. The architecture is based on the Filesystem Hierarchy Standard (FHS), which defines the layout and naming conventions for different directories in the system. Below is an explanation of the key components of the file system architecture in Linux:
+**Ans:** The file system architecture of a Linux operating system is a hierarchical structure that organizes and manages files, directories, and other data on storage devices such as hard drives and SSDs. The architecture is based on the Filesystem Hierarchy Standard (FHS), which defines the layout and naming conventions for different directories in the system. Below is an explanation of the key components of the file system architecture in Linux:
 
 * **Root (/):** The root directory is the top-level directory in the file system hierarchy, denoted by a forward slash (/). All other directories and files are located beneath the root directory. The root directory is essential for the system's functioning, and it contains directories like /bin, /etc, /home, /usr, and others.
 
