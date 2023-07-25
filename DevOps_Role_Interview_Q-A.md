@@ -48,7 +48,10 @@ Ans:
 #### Question-3: Where you will check event log in Linux OS?
 Ans: Use `journalctl` command to see the current event log and We can also check the logs under `var/log/` dir.
 #### Question-4: Disk is full of logs and you deleted the logs from log folder, then why machine is still showing not enough space, how you will release the memory of disk without rebooting the machine?
-Ans: 
+Ans: use `sudo sync` command, for example:
+```
+sudo sync; echo 1 | sudo tee /proc/sys/vm/drop_caches
+```
 #### Question-5: How to replace word "2022" with "2023" into all file (including sub folders) using shell scripting ?
 Ans: using sed command this can be acieved.
 ```
