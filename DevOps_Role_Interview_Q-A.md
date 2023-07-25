@@ -13,35 +13,35 @@ Ans: **Note** Please be very carefull while answering this question, because thi
 #### Question-1: Explain file system architecture of Linux OS ?
 Ans: The file system architecture of a Linux operating system is a hierarchical structure that organizes and manages files, directories, and other data on storage devices such as hard drives and SSDs. The architecture is based on the Filesystem Hierarchy Standard (FHS), which defines the layout and naming conventions for different directories in the system. Below is an explanation of the key components of the file system architecture in Linux:
 
-**Root (/):** The root directory is the top-level directory in the file system hierarchy, denoted by a forward slash (/). All other directories and files are located beneath the root directory. The root directory is essential for the system's functioning, and it contains directories like /bin, /etc, /home, /usr, and others.
+* **Root (/):** The root directory is the top-level directory in the file system hierarchy, denoted by a forward slash (/). All other directories and files are located beneath the root directory. The root directory is essential for the system's functioning, and it contains directories like /bin, /etc, /home, /usr, and others.
 
-**/bin:** This directory contains essential binary executables that are required for basic system operations. These binaries are essential for system maintenance and booting, and they are available to all users.
+* **/bin:** This directory contains essential binary executables that are required for basic system operations. These binaries are essential for system maintenance and booting, and they are available to all users.
 
-**/boot:** The /boot directory contains files related to the boot process, including the Linux kernel, initial ramdisk (initrd), boot configuration files, and bootloader (e.g., GRUB).
+* **/boot:** The /boot directory contains files related to the boot process, including the Linux kernel, initial ramdisk (initrd), boot configuration files, and bootloader (e.g., GRUB).
 
-**/dev:** The /dev directory contains device files that represent physical and virtual devices on the system. These files allow users and applications to interact with hardware devices.
+* **/dev:** The /dev directory contains device files that represent physical and virtual devices on the system. These files allow users and applications to interact with hardware devices.
 
-**/etc:** This directory contains system-wide configuration files. Important configuration files for various applications, services, and system settings are stored here.
+* **/etc:** This directory contains system-wide configuration files. Important configuration files for various applications, services, and system settings are stored here.
 
-**/home:** Each user on the system typically has their own subdirectory under /home, where they can store their personal files and settings. For example, the user "john" might have their home directory at /home/john.
+* **/home:** Each user on the system typically has their own subdirectory under /home, where they can store their personal files and settings. For example, the user "john" might have their home directory at /home/john.
 
-**/lib and /lib64:** These directories contain shared libraries (also known as dynamic link libraries) that are required by various programs on the system.
+* **/lib and /lib64:** These directories contain shared libraries (also known as dynamic link libraries) that are required by various programs on the system.
 
-**/media and /mnt:** These directories are used to temporarily mount removable media devices (e.g., USB drives) and other file systems manually.
+* **/media and /mnt:** These directories are used to temporarily mount removable media devices (e.g., USB drives) and other file systems manually.
 
-**/opt:** The /opt directory is used for installing optional software packages. It is typically used by software that is not part of the core system distribution.
+* **/opt:** The /opt directory is used for installing optional software packages. It is typically used by software that is not part of the core system distribution.
 
-**/proc:** The /proc directory is a virtual file system that provides information about processes and system status. It contains dynamic kernel data that can be accessed as regular files.
+* **/proc:** The /proc directory is a virtual file system that provides information about processes and system status. It contains dynamic kernel data that can be accessed as regular files.
 
-**/root:** This is the home directory for the root user, the administrative user with full privileges on the system.
+* **/root:** This is the home directory for the root user, the administrative user with full privileges on the system.
 
-**/sbin:** Similar to /bin, the /sbin directory contains essential system binaries, but these are meant for system administrators and require elevated privileges.
+* **/sbin:** Similar to /bin, the /sbin directory contains essential system binaries, but these are meant for system administrators and require elevated privileges.
 
-**/tmp:** The /tmp directory is used to store temporary files that may be required by various processes. The contents of this directory are usually cleared on system boot.
+* **/tmp:** The /tmp directory is used to store temporary files that may be required by various processes. The contents of this directory are usually cleared on system boot.
 
-**/usr:** The /usr directory contains user-related files and programs that are not essential for the system's basic operation. It includes user binaries, libraries, documentation, and more.
+* **/usr:** The /usr directory contains user-related files and programs that are not essential for the system's basic operation. It includes user binaries, libraries, documentation, and more.
 
-**/var:** This directory contains variable data that can change frequently during system operation. It includes log files, spool files (e.g., for printing and mail), temporary files, and more.
+* **/var:** This directory contains variable data that can change frequently during system operation. It includes log files, spool files (e.g., for printing and mail), temporary files, and more.
 
 #### Question-2: Explain file and folder permission architecture in Linux?
 Ans: 
