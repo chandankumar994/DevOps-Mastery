@@ -80,9 +80,41 @@ find *.log /var/log
 finf *.txt .
 ```
 
+#### Question-9: What is use of `pipe` command, and how to use it ?
+Ans: The pipe command, often represented by the vertical bar symbol |, is a powerful feature in command-line interfaces and shell scripting. It allows you to take the output of one command and use it as the input to another command. This feature enables you to chain commands together, creating powerful and flexible data processing pipelines.
 
+The basic syntax of using the pipe command is:
+```
+command1 | command2
+cat file1.txt | sort | head -4
+```
+```
+cat file1.txt | grep "Apple"
+```
 
+#### Question-10: What is the difference between `inode` and `ProcessID` ?
+**Ans:** In Linux, an `inode` is a data structure that stores metadata about a file, such as ownership, permissions, and disk block locations. A process ID (PID) is a unique identifier assigned to each running process. 
+Inodes represent files on the filesystem, while PIDs identify active processes in the operating system.
 
+#### Question-11: How to check process-id in Linux ?
+**Ans:** using `top` command.
+```
+top
+```
+#### Question-12: What is swap space in linux ?
+**Ans:** Swap space in Linux is a designated area on the hard drive used as virtual memory extension when physical RAM is insufficient. It allows the OS to move inactive data from RAM, freeing up memory for active processes.
+
+#### Question-13: What is the command to check which service is running on which port ?
+**Ans:** 
+```
+# To check all running applications
+netstat -ano
+
+# To check which service is running on 8080 port
+netstat -ano | grep 8080
+```
+#### Question-13: What is `lsof` command ?
+**Ans:** This `lsof` command will return the list of open files on the system.
 
 
 
