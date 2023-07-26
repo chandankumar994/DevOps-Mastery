@@ -68,7 +68,7 @@ Ans:
 rm -rf <dir-path>
 ```
 #### Question-7: What is `grep` command, and how to use it ?
-Ans: `grep` stands for Global Regular Expression Print, basically we use 'grep' command to perform operation in Linux.
+Ans: `grep` stands for Global Regular Expression Print, basically we use `grep` command to perform search operation in Linux.
 Example: 
 ```
 # Below is the command to search those lines which contains ERROR.
