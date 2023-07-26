@@ -193,8 +193,8 @@ Ans:
 #### Question-7: What is the difference between application and network load balancer ?
 **Ans:**
 
-#### Question-8: What is horizental and vertical scaling in AWS ?
-**Ans:**
+#### Question-8: What is horizental and vertical scaling in cloud computing ?
+**Ans:** The primary difference between horizontal scaling and vertical scaling is that horizontal scaling involves adding more machines or nodes to a system, while vertical scaling involves adding more power (CPU, RAM, storage, etc.) to an existing machine
 
 #### Question-9: Which loadbalancer is suitable for 'Live-BroadCasting' ?
 **Ans:**
