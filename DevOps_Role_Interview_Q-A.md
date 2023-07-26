@@ -44,7 +44,9 @@ Ans: **Note** Please be very carefull while answering this question, because thi
 * **/var:** This directory contains variable data that can change frequently during system operation. It includes log files, spool files (e.g., for printing and mail), temporary files, and more.
 
 #### Question-2: Explain file and folder permission architecture in Linux?
-Ans: 
+Ans: ![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/2a44cad8-2954-46c6-9d1e-7c4aa3fc2fe1)
+
+
 #### Question-3: Where you will check event log in Linux OS?
 Ans: Use `journalctl` command to see the current event log and We can also check the logs under `var/log/` dir.
 #### Question-4: Disk is full of logs and you deleted the logs around 10 Gib from log folder, and machine is still showing not enough space, how you will release the memory of disk without rebooting the machine?
