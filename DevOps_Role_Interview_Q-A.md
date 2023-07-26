@@ -56,7 +56,7 @@ sudo sync; echo 1 | sudo tee /proc/sys/vm/drop_caches
 Ans: using sed command this can be acieved.
 ```
 sed -i "s/2022/2023/g" *.*
-# Note: 2022 is old value and 2023 is new value (which we wanr=t to replace with)
+# Note: 2022 is old value and 2023 is new value (which we want to replace with)
 ```
 ```
 sed -i "s/Sunday/Monday/g" *.*
