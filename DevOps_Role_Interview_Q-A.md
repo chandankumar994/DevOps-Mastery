@@ -82,7 +82,7 @@ Example:
 ```
 find <expression> <path>
 find *.log /var/log
-finf *.txt .
+find *.txt .
 ```
 
 #### Question-9: What is use of `pipe` command, and how to use it ?
@@ -102,9 +102,11 @@ cat file1.txt | grep "Apple"
 Inodes represent files on the filesystem, while PIDs identify active processes in the operating system.
 
 #### Question-11: How to check process-id in Linux ?
-**Ans:** using `top` command.
+**Ans:** using `top` and `ps -ef` command.
 ```
 top
+
+ps -ef | grep nginx    # it will only show the nginx process
 ```
 #### Question-12: What is swap space in linux ?
 **Ans:** Swap space in Linux is a designated area on the hard drive used as virtual memory extension when physical RAM is insufficient. It allows the OS to move inactive data from RAM, freeing up memory for active processes.
@@ -131,21 +133,19 @@ netstat -ano | grep 8080
 **Ans:** GIT is a distributed version control system.
 
 #### Question-2: What is difference between GIT and GitHub ?
-**Ans:**
+**Ans:** Git is a version control system that allows developers to track changes in their code. GitHub is a web-based hosting service for git repositories. In simple terms, you can use git without Github, but you cannot use GitHub without Git.
 
-#### Question-3: What is difference between `git pull` and `git fetch` ?
-**Ans:** 
+#### Question-3: What is difference between `git fetch` and `git pull` ?
+**Ans:** Git Fetch is the command that tells the local repository that there are changes available in the remote repository without bringing the changes into the local repository. Git Pull on the other hand brings the copy of the remote directory changes into the local repository
 
 #### Question-4: What is `git stash` command ?
-**Ans:**
+**Ans:** The git stash command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
 
 #### Question-5: What is `git rebase` command and when we use it ?
-**Ans:**
+**Ans:** Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.
 
-
-
-
-
+#### Question-5: What is difference `git fork` and `git clone` ? 
+**Ans:** A fork creates a completely independent copy of Git repository. In contrast to a fork, a Git clone creates a linked copy that will continue to synchronize with the target repository.
 
 
 
