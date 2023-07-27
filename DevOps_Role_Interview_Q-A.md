@@ -144,8 +144,11 @@ netstat -ano | grep 8080
 #### Question-5: What is `git rebase` command and when we use it ?
 **Ans:** Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.
 
-#### Question-5: What is difference `git fork` and `git clone` ? 
+#### Question-6: What is difference `git fork` and `git clone` ? 
 **Ans:** A fork creates a completely independent copy of Git repository. In contrast to a fork, a Git clone creates a linked copy that will continue to synchronize with the target repository.
+
+#### Question-7: What is `git revert` command ? 
+**Ans:** The git revert command is a forward-moving undo operation that offers a safe method of undoing changes. Instead of deleting or orphaning commits in the commit history, a revert will create a new commit that inverses the changes specified.
 
 
 
