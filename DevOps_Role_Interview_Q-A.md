@@ -282,7 +282,7 @@ Ans:
 Ans:
 #### Question-15: Where you store your artifacts?
 Ans:
-#### Question-16: In which language you fron-end application is prepared  and how you are building it in the pipeline?
+#### Question-16: In which language you front-end application is prepared  and how you are building it in the pipeline?
 Ans:
 #### Question-1: 
 Ans:
