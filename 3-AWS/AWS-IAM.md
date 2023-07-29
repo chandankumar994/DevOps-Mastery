@@ -1,7 +1,7 @@
-## AWS IAM Notes
-### 1- IAM:
-**Note:** IAM stands for Identity Access Management.
-- IAM used to solve Authentication and Authorisation problem in AWS Accounts.
+## Introduction to AWS-IAM (Identity Access Management):
+
+### What is AWS-IAM Srvice ?
+- IAM used to manage Authentication and Authorisation relates works in within AWS account.
 
 #### Components of IAM:
 - **Users:** IAM users represent individual people or entities (such as applications or services) that interact with your AWS resources. Each user has a unique name and security credentials (password or access keys) used for authentication and access control.
