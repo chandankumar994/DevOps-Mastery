@@ -23,8 +23,11 @@ AWS (Amazon Web Services) is a cloud computing platform that provides a wide ran
   - **Groups:** We generally create group to make efficiency, and allocate users and pilicies to the groups.
     Example group: DEV, QA, DBA, Others.
   - **Roles:** Roles are basically similar to users (Contains temperory userid & Password), which we generally create to access some service.
-    For Example1: Dev team is looking to connect with DB Service then we can provide them a role to access it.
-    Example2: We can also use Roles to make communication between two or more services.
+
+     Example1: Dev team is looking to connect with DB Service then we can provide them a role to access it.
+     Example2: We can also use Roles to make communication between two or more services.
+    
+
 
     
 
