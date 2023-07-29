@@ -14,7 +14,7 @@ AWS (Amazon Web Services) is a cloud computing platform that provides a wide ran
 
 ### AWS Services
 
-#### 1- IAM:
+### 1- IAM:
 **Note:** IAM stands for Identity Access Management.
 - IAM used to solve Authentication and Authorisation problem in AWS Accounts.
 - What is User, Policies, Groups and Roles?
@@ -26,8 +26,10 @@ AWS (Amazon Web Services) is a cloud computing platform that provides a wide ran
 
      Example1: Dev team is looking to connect with DB Service then we can provide them a role to access it.
      Example2: We can also use Roles to make communication between two or more services.
-    
 
+
+    
+### 1- EC2:
 
     
 
