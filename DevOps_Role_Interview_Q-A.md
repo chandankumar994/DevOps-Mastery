@@ -155,25 +155,29 @@ netstat -ano | grep 8080
 
 
 
-
-
-
 ### 🚀Section-3 (CI/CD - Build and releases)🚀
 #### Question-1: Explain the build pipeline stages which you have worked or working on ?
-Ans: 
+**Ans:** 
 #### Question-2: What is the "POM.xml" file in java based appliction, and what are the important information a devops engineer need from POM.xml to build this java project ?
-Ans: 
-#### Question-3: How to build dot net based application using pipeline ?
-Ans: 
-#### Question-4: Wht we use "Maven clean build" in the build pipeline ?
-Ans: 
-#### Question-5: What is the difference between `maven clean build` and `maven clean install` ?
-Ans: 
-#### Question-6: What is multi-branching pipeline ?
-Ans: 
-#### Question-7: Explain about branching technique ?
-Ans: 
+**Ans:** The "POM.xml" is a Project Object Model file used in Java-based applications with Maven. DevOps engineers require it for project dependencies, build configurations, and version management during the build process.
 
+#### Question-3: How to build dot net based application using pipeline ?
+**Ans:** Use a CI/CD pipeline tool like Azure DevOps or Jenkins. Define pipeline stages for build, test, and deploy. Configure triggers and agent settings to automate the process. **Note:** We use `MS build` tool to build dot net based projects.
+
+#### Question-4: Why we use "Maven clean build" in the build pipeline ?
+**Ans:** Ensures a fresh build by cleaning previous artifacts.
+
+#### Question-5: What is the difference between `maven clean build` and `maven clean install` ?
+**Ans:** 
+- **Maven clean build:** Compiles and packages the project.
+- **Maven clean install:** Compiles, packages, and installs the project's artifact into the local Maven repository.
+
+#### Question-6: What is multi-branching pipeline ?
+**Ans:** A CI/CD pipeline that automates building, testing, and deploying code from multiple branches simultaneously.
+
+#### Question-7: Explain about branching technique ?
+**Ans:** Branching is a version control technique where developers create isolated copies of the codebase to work on new features or fixes independently. It helps manage changes and reduce conflicts.
+I have used Sprint wise, DEV, QA, MAIN Branches in my previous projects.
 
 
 ### 🚀Section-4 (Cloud AWS/Azure)🚀
@@ -185,6 +189,7 @@ Ans:
 
 #### Question-3: How you will create 3 tier architecture application, what all components you will use (Draw the architecture) ?
 **Ans:** Creating a 3-tier architecture application involves dividing the application into three layers: presentation, application, and data.
+
 - **Presentation Layer:** User interacts with the front-end (web or mobile app).
 **Components:** Web or Mobile Application, User Interface (UI).
 
