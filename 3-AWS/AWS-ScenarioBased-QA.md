@@ -1,5 +1,5 @@
+# Part-1
 ## Scenario Based Interview Questions on EC2, IAM and VPC
-
 
 #### Q: You have been assigned to design a VPC architecture for a 2-tier application. The application needs to be highly available and scalable. How would you design the VPC architecture?
 
@@ -55,3 +55,69 @@ By combining NACLs and security groups, I can achieve granular security controls
 - Configure the security group for the bastion host to allow inbound SSH (or RDP for Windows) traffic from your IP address or a restricted range of trusted IP addresses. This limits access to the bastion host to authorized administrators only.
 - Place the instances in the private subnet and configure their security groups to allow inbound SSH (or RDP) traffic from the bastion host security group.
 - SSH (or RDP) into the bastion host using your private key or password. From the bastion host, you can then SSH (or RDP) into the instances in the private subnet using their private IP addresses.
+
+# Pert-2
+
+#### Question: Can you explain the key features of AWS Cloud?
+**Answer:** AWS Cloud is a comprehensive cloud computing platform that offers numerous features. Some key features include:
+- **Elastic Compute Cloud (EC2):** Provides scalable virtual servers in the cloud.
+- **Simple Storage Service (S3):** Object storage for securely storing and retrieving data.
+- **Elastic Beanstalk:** Automates application deployment and scaling.
+- **Relational Database Service (RDS):** Manages and scales relational databases.
+- **Lambda:** Serverless computing platform for running code without provisioning servers.
+
+#### Question: How do you secure data in AWS Cloud?
+**Answer:** AWS provides several security measures to protect data. To ensure data security, I employ the following best practices:
+- **Encryption:** Use AWS Key Management Service (KMS) for encryption at rest and in transit.
+- **IAM Roles:** Implement least privilege principles and use IAM roles to control access.
+- **Network Security:** Utilize Virtual Private Cloud (VPC) and security groups to restrict network access.
+- **Multi-Factor Authentication (MFA):** Enable MFA to add an extra layer of security to user accounts.
+
+#### Question: What are the differences between Amazon EC2 and AWS Lambda?
+**Answer:** Amazon EC2 and AWS Lambda serve different purposes:
+- **Amazon EC2:** Provides virtual servers that you need to manage and scale manually.
+- **AWS Lambda:** Offers serverless compute, where AWS automatically manages server provisioning, scaling, and maintenance. It's ideal for event-driven tasks.
+
+#### Question: How would you handle high availability in AWS Cloud?
+**Answer:** Achieving high availability in AWS involves the following strategies:
+- **Multi-AZ Deployments:** Use AWS services that support Multi-AZ redundancy, such as RDS, to maintain data in multiple availability zones.
+- **Elastic Load Balancing:** Distribute incoming traffic across multiple instances for improved fault tolerance.
+- **Auto Scaling:** Automatically add or remove instances based on traffic demand to maintain optimal performance.
+- **Global Content Delivery:** Use Amazon CloudFront for caching and delivering content from multiple edge locations.
+
+#### Question: Describe your experience with Infrastructure as Code (IaC) and the tools you've used.
+**Answer:** I am a strong proponent of IaC, which allows me to define and manage infrastructure using code. I have experience with:
+- **AWS CloudFormation:** Writing templates to provision and manage AWS resources in a repeatable and automated manner.
+- **Terraform:** Creating infrastructure across multiple cloud providers, ensuring consistency and version control.
+- **Ansible:** Using Ansible playbooks to configure and deploy software on AWS instances.
+
+#### Question: How do you monitor AWS resources and applications?
+**Answer:** Monitoring is crucial for maintaining a healthy infrastructure. I use AWS services like:
+- **Amazon CloudWatch:** Collects and tracks metrics, sets alarms, and generates automated actions.
+- **AWS Config:** Tracks resource changes and maintains configuration history for compliance and troubleshooting.
+- **AWS X-Ray:** Helps analyze and debug distributed applications, ensuring optimal performance.
+
+#### Question: Describe a project where you optimized AWS costs.
+**Answer:** In a previous project, we optimized AWS costs through various methods, including:
+- **Reserved Instances (RIs):** Identifying stable workloads and purchasing RIs to save on long-term usage.
+- **Instance Right-Sizing:** Analyzing utilization patterns and resizing instances for better cost efficiency.
+- **Spot Instances:** Utilizing Spot Instances for non-critical workloads, taking advantage of lower prices.
+- **Resource Tagging:** Implementing resource tagging to track and allocate costs accurately.
+
+#### Question: How would you handle disaster recovery in AWS Cloud?
+**Answer:** For disaster recovery in AWS, I employ the following strategies:
+- **Data Backup:** Regularly backing up data to Amazon S3 or Glacier for safe storage.
+- **Cross-Region Replication:** Replicating critical resources to a different region for redundancy.
+- **Disaster Recovery Testing:** Conducting periodic tests to validate the effectiveness of recovery procedures.
+- **AWS Disaster Recovery Services**: Leveraging services like AWS Backup and AWS CloudEndure for automated recovery.
+
+#### Question: How do you ensure compliance and governance in AWS environments?
+**Answer:** Compliance and governance are crucial in regulated industries. I ensure compliance through:
+- **AWS IAM Policies:** Implementing strict IAM policies to control access and enforce least privilege.
+- **AWS Config Rules:** Defining custom rules to check for compliance violations and trigger notifications.
+- **AWS CloudTrail:** Enabling CloudTrail to log all API activity, aiding in security analysis and auditing.
+
+#### Question: Can you share a situation where you demonstrated problem-solving skills in an AWS-related scenario?
+**Answer:** In a previous project, we encountered a performance bottleneck in an application hosted on EC2 instances. To resolve the issue, I used AWS CloudWatch to monitor CPU and memory usage, identified the bottleneck in the code, and optimized the application. Additionally, I configured Auto Scaling to handle traffic spikes efficiently, leading to improved application performance and reduced costs.
+
+
