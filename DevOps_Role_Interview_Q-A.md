@@ -178,52 +178,74 @@ Ans:
 
 ### 🚀Section-4 (Cloud AWS/Azure)🚀
 #### Question-1: What are the services you have worked in AWS ?
-**Ans:**
+**Ans:** IAM, EC2, VPC, S3, ECS, Cloud Watch, Lambda, AWS RDS, AWS SNS ect.
 
 #### Question-2: How you will retrive password if password is lost for any virtual machine ?
-**Ans:** 
+**Ans:** If the password is lost for a virtual machine, you can typically reset it using the cloud provider's management console or API by providing appropriate credentials or using the key pair method.
 
 #### Question-3: How you will create 3 tier architecture application, what all components you will use (Draw the architecture) ?
-**Ans:** 
+**Ans:** Creating a 3-tier architecture application involves dividing the application into three layers: presentation, application, and data.
+- **Presentation Layer:** User interacts with the front-end (web or mobile app).
+**Components:** Web or Mobile Application, User Interface (UI).
+
+- **Application Layer:** Business logic and processing occur here.
+**Components:** Load Balancer, Application Servers (e.g., Node.js, Java, .NET), API Gateway.
+
+- **Data Layer:** Handles data storage and retrieval.
+**Components:** Database (e.g., RDS, DynamoDB), Cache (e.g., Redis), File Storage (e.g., S3).
+
+The Load Balancer distributes incoming traffic among Application Servers, which interact with the Database and Cache for data management. The UI layer communicates with the Application Layer via APIs provided by the API Gateway.
+
+Note: The actual architecture may vary based on specific requirements and technologies used.
+
 
 #### Question-4: How many types of EC2 instances we are having based on costs ?
-**Ans:** 
+**Ans:** EC2 instances have three cost-based types: 
+- **On-Demand** (pay-as-you-go), 
+- **Reserved** (upfront payment with discounted hourly rates),
+- **Spot** (bid-based pricing, fluctuates with demand and supply).
 
 #### Question-5: What is the difference between 'on-demand' and 'reserved' instance ?
-**Ans:** 
+**Ans:** On-demand instances are pay-as-you-go, billed hourly with no upfront commitment. Reserved instances require an upfront payment for a significant discount on the hourly rate over a 1 or 3-year term.
 
 #### Question-6: What is load balancer and why we use it ?
-**Ans:**
+**Ans:** A load balancer distributes incoming network traffic across multiple servers to ensure high availability, fault tolerance, and optimal resource utilization. It enhances application performance, mitigates downtime, and scales efficiently as traffic fluctuates, ensuring a seamless user experience.
 
-#### Question-7: What is the difference between application and network load balancer ?
-**Ans:**
+#### Question-7: When we use application and when we use network load balancer ?
+**Ans:** Use Application Load Balancer (ALB) for HTTP/HTTPS applications and advanced routing. 
+Use Network Load Balancer (NLB) for low-latency, TCP/UDP-based services
 
 #### Question-8: What is horizental and vertical scaling in cloud computing ?
 **Ans:** The primary difference between horizontal scaling and vertical scaling is that horizontal scaling involves adding more machines or nodes to a system, while vertical scaling involves adding more power (CPU, RAM, storage, etc.) to an existing machine
 
 #### Question-9: Which loadbalancer is suitable for 'Live-BroadCasting' ?
-**Ans:**
+**Ans:** Network load balancer.
 
-#### Question-10: What kis the difference between TCP and UDP protocol ?
-**Ans:**
+#### Question-10: What is the difference between TCP and UDP protocol ?
+**Ans:** 
+- **TCP (Transmission Control Protocol)** is a connection-oriented protocol that ensures reliable data delivery through acknowledgment and retransmission, suitable for applications requiring data integrity. 
+
+- **UDP (User Datagram Protocol)** is connectionless, providing faster but unreliable data transmission, ideal for real-time applications where speed is prioritized over data integrity.
 
 #### Question-11: What is VPC ?
-**Ans:**
+**Ans:** VPC (Virtual Private Cloud) is a virtual network within any public cloud that enables users to launch resources securely and isolate them from the public internet.
 
 #### Question-12: What is the difference between Internet-Gateway and Nat-Gateway ?
-**Ans:**
+**Ans:** 
+- An **Internet Gateway** allows communication between a VPC and the public internet.
+- **NAT Gateway enables** private resources within a VPC to access the internet.
 
 #### Question-13: If any server is hosted on private subnet, then how this server will communicate with external internet ?
-**Ans:**
+**Ans:** Through a NAT Gateway or a VPN connection.
 
 #### Question-14: What is Cloud-Watch service and why we use it ?
-**Ans:**
+**Ans:** CloudWatch is an AWS monitoring service that collects and tracks metrics, logs, and events for resources, helping to monitor and troubleshoot applications and infrastructure.
 
 #### Question-15: What is RDS service ?
-**Ans:**
+**Ans:** RDS (Relational Database Service) is an AWS service providing managed database solutions for various relational database engines.
 
 #### Question-16: How to configure SNS (Simple Notification Service) ?
-**Ans:**
+**Ans:** To configure SNS, create a topic, add subscribers, set access policies, and publish messages to the topic via the AWS Management Console or API, enabling scalable, flexible notification delivery.
 
 #### Question-17: 
 **Ans:**
