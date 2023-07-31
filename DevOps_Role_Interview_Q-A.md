@@ -280,37 +280,88 @@ Use Network Load Balancer (NLB) for low-latency, TCP/UDP-based services
 
 ### 🚀Section-5 (Azure DevOps)🚀
 #### Question-1: How to add multiple user in Azure DevOps?
-Ans:
+Ans: We can add multiple users in the azure devops from `Organization settings` -> `User` -> `add Users` options.
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/97c313e3-c52e-44dd-9c82-00874460c04a)
+
 #### Question-2: How to migrate items from jira to Azure DevOps?
-Ans:
+Ans: 
 #### Question-3: How to configure subscription in Azure DevOps?
-Ans:
+Ans: Under `Billing` section of `Organization Settings` in azure DevOps.
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/b0fe0129-24b8-4e43-a50f-2be194cbc767)
+
+
 #### Question-4: Adding users in Azure DevOps, does it cost ?
-Ans:
+Ans: Yes, till than 5 users it is free, but beond this it will cost.
+
 #### Question-5: What is the difference between self-hosted and microsoft-hosted agents in Azure DevOps?
-Ans:
+Ans: Self-hosted agents run on your infrastructure, Microsoft-hosted agents run on Azure infrastructure for Azure DevOps pipeline execution.
+
 #### Question-6: How you will manage 100 projects in Azure DevOps?
 Ans: 
+- Use appropriate naming conventions and organization schemes for clarity.
+- Utilize Azure DevOps security features to control access.
+- Create project templates for consistency.
+- Leverage Azure DevOps boards and backlogs to prioritize and track progress.
+- Group related projects into Azure DevOps Organizations or collections.
+- Set up appropriate pipelines and releases to automate workflows.
+- Regularly review and optimize projects for efficiency.
+- Train teams on best practices and tools.
+
 #### Question-7: What are the best practices to use Azure DevOps?
-Ans:
+Ans: Best practices for using Azure DevOps include:
+- Organize projects with clear naming conventions.
+- Use version control for code.
+- Create CI/CD pipelines for automated builds and deployments.
+- Set up work tracking to manage tasks.
+- Implement security measures.
+- Regularly review and optimize processes.
+- Train teams effectively.
+
 #### Question-8: How to set permission in Azure DevOps?
-Ans:
+Ans: In Azure DevOps, set permissions through "Security" settings at the organization, project, or repository levels to control access.
+
 #### Question-9: What is the difference between the roles like Basic, Basic + Test Plan, Stackeholder and Visual Studio ?
-Ans:
+Ans: 
+- **Basic:** Allows code, work item, and pipeline access.
+- **Basic + Test Plan**: Adds Test Plan features for testing.
+- **Stakeholder:** Limited access to work items and feedback.
+- **Visual Studio:** Full access to Azure DevOps features for Visual Studio subscribers.
+- 
 #### Question-10: How you manage thousand (1000) pipelines in Azure DevOps ?
-Ans:
+Ans: To manage thousands of pipelines in Azure DevOps, use proper naming conventions, tags, and folder structures for organization and efficiency.
+
 #### Question-11: Have you ever build .Net, Java, and Python based project?
-Ans:
+Ans: Yes, I have used To build a .Net project, .NET CLI or Visual Studio. For Java, used Maven or Gradle. For Python, used pip or setup.py, typically with virtual environments for isolation.
+
 #### Question-12: How to migrate tasks and pipelines from Jenkins to Azure DevOps?
-Ans:
+Ans: To migrate tasks and pipelines from Jenkins to Azure DevOps, recreate them in Azure DevOps using YAML pipelines or the visual editor, and adapt Jenkins-specific tasks to equivalent Azure DevOps tasks.
+
 #### Question-13: What are the tool stack you are using in your project?
-Ans:
+Ans: Below is the list of tools.
+- Version Control: Git, Subversion
+- Continuous Integration (CI): Jenkins, Azure DevOps, GitLab CI/CD, CircleCI
+- Configuration Management: Ansible, Puppet, Chef
+- Containerization: Docker, Kubernetes
+- Infrastructure as Code (IaC): Terraform, CloudFormation
+- Monitoring and Logging: Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana)
+- Cloud Platforms: AWS, Azure, Google Cloud Platform
+- Collaboration & Communication: Slack, Microsoft Teams
+- Issue & Project Tracking: Jira, Trello
+- Automated Testing: Selenium, JUnit, NUnit
+- Deployment: Helm, Octopus Deploy
+- Code Quality: SonarQube, ESLint, Checkstyle
+- Artifact Repository: Nexus, JFrog Artifactory
+
 #### Question-14: What tool you use to manage the database ?
-Ans:
+Ans: SQL Server Management Studio (SSMS) - for Microsoft SQL Server.
+
 #### Question-15: Where you store your artifacts?
-Ans:
+Ans: Nexus and JFrog Artifactory.
+
 #### Question-16: In which language you front-end application is prepared  and how you are building it in the pipeline?
-Ans:
+Ans: Our front end application kis prepared in dot net core and we are using `.NET Core CLI` and `MS build` to build the project using pipeline.
+our middle ware is prepared using java so we are using `Maven` to build it using pipeline.
+
 #### Question-1: 
 Ans:
 #### Question-1: 
