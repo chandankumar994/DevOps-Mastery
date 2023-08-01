@@ -99,9 +99,9 @@ function_name() {
 ```
 Benefits of using functions:
 
-Modularity: Functions allow you to break down complex scripts into manageable, reusable blocks of code.
-Readability: Functions make your code more structured and easier to understand.
-Maintainability: Changes to a function affect only that specific section of the code, reducing the risk of unintended side effects.
+- Modularity: Functions allow you to break down complex scripts into manageable, reusable blocks of code.
+- Readability: Functions make your code more structured and easier to understand.
+- Maintainability: Changes to a function affect only that specific section of the code, reducing the risk of unintended side effects.
 **Example:**
 ```
 #!/bin/bash
