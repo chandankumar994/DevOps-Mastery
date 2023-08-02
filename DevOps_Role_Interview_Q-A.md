@@ -358,8 +358,8 @@ Ans: SQL Server Management Studio (SSMS) - for Microsoft SQL Server.
 #### Question-15: Where you store your artifacts?
 Ans: Nexus and JFrog Artifactory.
 
-#### Question-16: In which language you front-end application is prepared  and how you are building it in the pipeline?
-Ans: Our front end application kis prepared in dot net core and we are using `.NET Core CLI` and `MS build` to build the project using pipeline.
+#### Question-16: In which language your front-end application is prepared  and how you are building it in the pipeline?
+Ans: Our front end application is prepared in dot net core and we are using `.NET Core CLI` and `MS build` to build the project using pipeline.
 our middle ware is prepared using java so we are using `Maven` to build it using pipeline.
 
 #### Question-1: 
