@@ -37,7 +37,7 @@ CMD ["java","Hello"]
 docker build . -t java-app
 ```
 - Now check images using `docker images` command
-- Now run this image t create a container.
+- Now run this image to create a container.
 ```
 docker run java-app
 ```
