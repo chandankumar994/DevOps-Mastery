@@ -1,6 +1,6 @@
 ## Lab-2
 
-### Create a direcrory and Dockerfile in this dir and prepare a container using the Dockerfile to run java-app into it.
+### Create a directory and Dockerfile in this dir and prepare a container using the Dockerfile to run java-app into it.
 Steps to perform this lab:
 - create a directory name `java-app` using `mkdir java-app`.
 - Go to this directory using `cd java-app`.
