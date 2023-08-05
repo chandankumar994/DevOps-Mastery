@@ -18,7 +18,7 @@ docker --version
 ```
 
 - run `docker ps` command to check running containers.
-- Incase getting permission error then add 'ubuntu` user into `docker` group.
+- Incase getting permission error then add `ubuntu` user into `docker` group.
 ```
 sudo usermod -aG docker $USER
 
