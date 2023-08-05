@@ -1,6 +1,6 @@
 ## Lab-3
 
-### Create a flask app and run this app into a docler container. (Flast is a micro framework of python).
+### Create a flask app and run this app into a docker container. (Flast is a micro framework of python).
 Steps:
 - Create a directory `flask-app` using `mkdir flsk-app`.
 - Go to this dir using ` cd flask-app`.
