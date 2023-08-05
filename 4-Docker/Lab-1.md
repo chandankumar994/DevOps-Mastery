@@ -61,7 +61,10 @@ docker exec -it <containerID> sh
 ```
 - Now you are inside the shell run below command to access mysql DB.
 ```
-mysql -u root -p test@123
+mysql -u root -p
+
+# Then provide password
+test@123 
 ```
 - Now you can run mysql queries on this terminal.
 - Type `exit` and press `enter` button to exit from terminal
