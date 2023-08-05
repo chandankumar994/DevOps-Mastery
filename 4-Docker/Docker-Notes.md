@@ -16,7 +16,7 @@ Docker is a platform for developing, shipping, and running applications using co
 Docker Engine is the core component of Docker that manages containers, allowing for application deployment, execution, and scaling.
 
 #### What are the components of docker engine?
-- **dockerd:** Helps in background process to manage containers, which user `containerd`. 
+- **dockerd:** Helps in background process to manage containers, which uses `containerd`. 
   - **containerd:** This comes under dockerd.
 - **Docker CLI:** Docker CLI is the command-line interface for interacting with Docker.
 
