@@ -34,6 +34,7 @@ A Docker image is a static snapshot of an application and its dependencies, used
 #### What is docker container?
 A Docker container is an isolated, executable environment that encapsulates an application and its dependencies for consistent deployment.
 
-
+#### What is dockerhub?
+Docker Hub is a cloud-based registry service that allows users to share, store, and download Docker images for easy access.
 
 
