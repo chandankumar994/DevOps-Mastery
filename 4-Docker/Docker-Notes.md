@@ -37,4 +37,34 @@ A Docker container is an isolated, executable environment that encapsulates an a
 #### What is dockerhub?
 Docker Hub is a cloud-based registry service that allows users to share, store, and download Docker images for easy access.
 
+#### Some docker commands?
+- **Remove images:** To remove Docker images using the prune command, you can use the following command:
+  ```
+  docker image prune
+  ```
+  This command will remove all the dangling (untagged) images, which are images that are not associated with any container. It helps to clean up unused images and free up disk space. Docker will prompt you to confirm the removal before actually deleting the images.
+  
+  If you want to bypass the confirmation prompt and forcefully remove the dangling images, you can use the following command:
+  ```
+  docker image prune -f
+  ```
+  Please be cautious while using the prune command, as it will remove unused images, and you won't be able to restore them unless you have a backup.
 
+- Remove all stopped containers:
+  ```
+  docker container prune
+
+  # to remove forcefully
+  docker container prune -f
+  ```
+- Clean up unused data in your Docker environment:
+  ```
+  docker system prune
+  ```
+- Remove all images:
+  ```
+  docker image prune -a
+  
+  # forcefully
+  docker image prune -a -f
+  ```
