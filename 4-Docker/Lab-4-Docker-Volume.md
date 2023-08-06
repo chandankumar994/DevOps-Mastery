@@ -33,7 +33,7 @@ Because data will be available until container is running, thats why we attach d
   ```
 
 
-## For Lab clone below repository:
+## For Lab: clone below repository:
 ```
 git clone https://github.com/chandankumar994/django-todo-cicd.git
 ```
