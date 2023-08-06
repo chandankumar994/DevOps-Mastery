@@ -8,3 +8,9 @@ To compress the docker image size.
 
 
 ## Lab - Docker Multi Stages Dockerfile:
+- Clone below repository and follow the steps to run it:
+
+  ```
+  git clone https://github.com/chandankumar994/python-multistage-docker.git
+  ```
+  
