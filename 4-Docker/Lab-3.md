@@ -42,7 +42,7 @@ docker build . -t flask-app
 ```
 - Chaeck images
 ```
-docler images
+docker images
 ```
 - Now run image in detach mode on 5000 host and 5000 container port.
 ```
