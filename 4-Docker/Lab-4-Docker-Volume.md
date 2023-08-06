@@ -22,7 +22,7 @@ Because data will be available until container is running, thats why we attach d
   ```
   docker volume ls
   ```
-- Attach vilume with container:
+- Attach volume with container:
   ```
   docker run -d --mount source=django-app-volume,target=/data -p 8000:8000 django-app:latest
 
