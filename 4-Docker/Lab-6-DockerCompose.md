@@ -21,7 +21,7 @@ sudo apt-get install docker-compose-plugin
 ## LAB: Docker Compose: 
 
 ### How to create and deploy two tier flask app using docker compose.
-- Clone below repository and run follw the steps:
+- Clone below repository and follow the steps to run it:
   ```
   git clone https://github.com/chandankumar994/two-tier-flask-app.git
   ```
