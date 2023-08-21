@@ -55,5 +55,7 @@ Kubernetes is a container management tool, supports multiple containerization to
 
 ### Architecture:
 
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/2a994bab-77e3-491e-9d5d-4e0f4d995202)
 
+### Working with Kubernetes:
 
