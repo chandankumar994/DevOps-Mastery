@@ -42,7 +42,18 @@ Kubernetes is a container management tool, supports multiple containerization to
 | | Health monitoring of containers |
 | | Batch execution (Onetime/sequential/Parallel) |
 
+### Architecture type:
+- 1 Master 1 node
+- 1 Master Multi node
+- Multi Master and Multi node
 
+**Note**: Generally we create 1 container in one POD, but we can create multiple containers too.
+
+### Flow:
+| Cluster ->| Nodes ->| Container -> | Application/Microservice|
+| --- | --- | --- | ---|
+
+### Architecture:
 
 
 
