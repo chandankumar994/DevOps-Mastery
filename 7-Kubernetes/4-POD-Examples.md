@@ -193,10 +193,10 @@ spec:
   ```
 - Delete pod using label
   ```
-  kubectl delete pods -l env!=development
+  kubectl delete pod -l env!=development
   ```
 - **Note:**
-  - Unlike name/UID, level do not provide uniqueness, as in general, we can expect many object it carry the same label.
+  - Unlike name/uid, level do not provide uniqueness, as in general, we can expect many object it carry the same label.
   - One labels are attached to an object, we would need filters to narrow down and these are called as label Selectors.
   - The api currently supports two types of selectors:
     - Equality based (where we use `=`, `!=`)
@@ -207,9 +207,11 @@ spec:
       ```
   - A label selector can be made of multiple requirement which are comma separated.
     ```
-      kubectl get pods -l class=pods, myname=chandan
+      kubectl get pods -l class=pods,team=dev
     ```
   
+---
+### Node-Selectors:
 
 
 
