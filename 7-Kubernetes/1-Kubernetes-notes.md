@@ -148,7 +148,7 @@ Node is going to run 3 important piece of software/processes.
 - Entire POD is hosted on the same node (shcedular will decide about which node).
 
 #### POD Limitations:
-- No auto-healing ot auto-scalling (by default).
+- No auto-healing or auto-scalling (by default).
 - POD Crashes.
 
 #### Kubernetes Objects:
