@@ -158,7 +158,7 @@ Node is going to run 3 important piece of software/processes.
 - **Volume:** No temperary storage.
 
 #### Important:
-**kubectl:** Single cloud
-**kubeadm:** on premise
-**kubefed:** hu=ybrid cloud
+- **kubectl:** Single cloud
+- **kubeadm:** on premise
+- **kubefed:** hu=ybrid cloud
  
