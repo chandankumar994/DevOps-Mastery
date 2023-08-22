@@ -41,10 +41,19 @@ spec:
       image: ubuntu
       command: ["/bin/bash", "-c", "while true; do echo Hello from Container-2; sleep 5 ; done"]
 ```
-Command to check IP (this will return pod IP), Note: IP will be same for all containers(c00,c001 both).
-```
-kubectl exec testpod3 -c c00 -- hostname -i
-```
+- Command to check IP (this will return pod IP), Note: IP will be same for all containers(c00,c001 both).
+  ```
+  kubectl exec testpod3 -c c00 -- hostname -i
+  ```
+- Command to go inside a container:
+  ```
+  kubectl exec testpod3 it -c c01 -- /bin/bash
+  ```
+- Now you can access everything inside the container
+  ```
+  docker ps
+  ps -ef
+  ```
 ---
 ### POD environment variables:
 ```
@@ -75,3 +84,13 @@ spec:
       ports:
        - containerPort: 80 
 ```
+---
+### Delete PODs
+- delete single pod
+  ```
+  kubectl delete pod <pod-name>
+  ```
+- delete POD using manifest file:
+  ```
+  kubectl delete pod -f <file-name.yml>
+  ```
