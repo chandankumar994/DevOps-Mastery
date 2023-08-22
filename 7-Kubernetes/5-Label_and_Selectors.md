@@ -1,6 +1,6 @@
 # Labels and Selectors
 
-### Labels and Selectors:
+## Labels
 - Labels are the machenism you use to organize the kubernetes objects.
 - A labels is a key-value pair without any predefined meaning that can be attached to the ojbects.
 - Labels are similar to tag in AWS as git when you use a name to quick reference.
@@ -68,4 +68,5 @@ spec:
     ```
   
 ---
-### Node-Selectors:
+
+## Node-Selectors:
