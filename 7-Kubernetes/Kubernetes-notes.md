@@ -160,5 +160,5 @@ Node is going to run 3 important piece of software/processes.
 #### Important:
 - **kubectl:** Single cloud
 - **kubeadm:** on premise
-- **kubefed:** hu=ybrid cloud
+- **kubefed:** hybrid cloud
  
