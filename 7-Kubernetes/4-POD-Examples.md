@@ -64,7 +64,7 @@ spec:
   ps -ef
   ```
 ---
-### POD environment variables:
+### POD environment variables (env.yml):
 ```
 kind: Pod
 apiVersion: v1
@@ -79,8 +79,29 @@ spec:
       - name: MYNAME
         value: CHANDAN
 ```
+- Create pod with using below command:
+  ```
+  kubectl apply -f env.yml
+  kubectl get pods
+  ```
+- Go inside the pod
+  ```
+  kubectl exec <pod-name> -it -- /bin/bash
+  ```
+- Run below command to see environment variable values:
+  ```
+  env
+  # this `env` command will print all environment variables
+
+  echo $MYNAME
+  # output- CHANDAN
+
+  exit
+  # using `exit` command you will be out form the pod.
+  ```
+
 ---
-### Pod with ports:
+### Pod with ports (portdemo.yml):
 ```
 kind: Pod
 apiVersion: v1
@@ -93,6 +114,24 @@ spec:
       ports:
        - containerPort: 80 
 ```
+- Create pod with using below command:
+  ```
+  kubectl apply -f portdemo.yml
+  kubectl get pods
+  ```
+- Get Pod information in details:
+  ```
+  kubectl get pods -o wide
+  #you will get all the details about the POD including pod's IP
+  ```
+- Test service is running on given port or not
+  ```
+  curl <pod-ip>:80
+  curl 10.90.33.40:80 
+
+  # OutPut - it works
+  ```
+
 ---
 ### Delete PODs
 - delete single pod
