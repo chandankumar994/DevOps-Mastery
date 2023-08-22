@@ -7,6 +7,7 @@
 - install Kubectl
 - install Minikube
 
+---
 ### Basic pod demo (manifest file) pod1.yml.
 ```
 kind: Pod                              
@@ -24,6 +25,7 @@ run below command to create container
 ```
 kubectl apply -f pod1.yml
 ```
+---
 ### Multi container Pod (pod2.xml)
 ```
 kind: Pod
@@ -39,6 +41,7 @@ spec:
       image: ubuntu
       command: ["/bin/bash", "-c", "while true; do echo Hello from Container-2; sleep 5 ; done"]
 ```
+---
 ### POD environment variables:
 ```
 kind: Pod
@@ -54,6 +57,7 @@ spec:
       - name: MYNAME
         value: CHANDAN
 ```
+---
 ### Pod with ports:
 ```
 kind: Pod
