@@ -70,3 +70,43 @@ spec:
 ---
 
 ## Node-Selectors:
+- One usecase for selecting labels is to constrain the set of nodes onto whic a pod can schedule. ie- you can tell a pod to only be able to run on particular nodes.
+- Generally such constraints are unnecessary as the schedular will automatically do a reasonable placement, but on certain circumstances we might need it.
+- We can use lebels to tag nodes.
+- You the nodes are tagged, you can use the label selectors to specify the pods run only of specific nodes.
+- First we give label to the node.
+- Then use node selector to the pod configuration.
+
+#### Example: (node-selector.yml)
+```
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nodelabels
+  labels:
+    env: development
+spec:
+    containers:
+       - name: c00
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Hello-Chandan; sleep 5 ; done"]
+    nodeSelector:                                         
+       hardware: t2-medium
+```
+- Create pod using above manifest:
+  ```
+  kubectl apply -f node-selector.yml
+
+  kubectl get pods
+  #o/p - pod will not be created because `t2-medium` label does not exist on any node, now you need to apply node label on node.
+  ```
+- Apply label on node
+  ```
+  kubectl get nodes
+  #o/p - all node will be displayed
+
+  kubectl label nodes <node-name> hardware=t2-medium
+
+  #to check:
+  kubectl describe pod nodelabels
+  ```
