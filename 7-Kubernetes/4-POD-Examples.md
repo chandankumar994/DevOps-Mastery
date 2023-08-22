@@ -41,7 +41,7 @@ spec:
       image: ubuntu
       command: ["/bin/bash", "-c", "while true; do echo Hello from Container-2; sleep 5 ; done"]
 ```
-Command to check IP:
+Command to check IP (this will return pod IP), Note: IP will be same for all containers(c00,c001 both).
 ```
 kubectl exec testpod3 -c c00 -- hostname -i
 ```
