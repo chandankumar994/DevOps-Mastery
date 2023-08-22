@@ -97,10 +97,68 @@ Kubernetes is a container management tool, supports multiple containerization to
 - A schedular watches for newly created pods that have no node assigned for every pod, that the schedular discovers, the schedular become responsible for finding best node for that POD to run on.
 - Schedular gets the information for hardware configuration from the fonfiguration files and schedules the PODs on nodes accordingly.
 
-#### 4- Control Manager:
-- 
+#### 4- Controller Manager:
+- Manke sure actual state of cluster match the desigred state.
+- Two possible choices for controll manager:
+  - If K8s on cloud, then it will be `cloud-controller-manager`.
+  - if K8s on none-cloud, then it will be `kube-conrtoller-manager`.
+  - ##### Conponents on Master that runs controller:
+    - Node Controller: Responsible for checking the cloud providers to determine if a node has beem dected on the cloud after it steps responding.
+    - Rout Controller: Responsible for setting up networks, routs on your cloud.
+    - Service Controller: Responsible for load balancer on your cloud against service type load-balancer.
+    - Volume Controller: Respondible for creating attaching and mounting volume and intracting with the cloud providers to orchestrate volume.
 
+### Node:
+Node is going to run 3 important piece of software/processes.
 
+#### 1- Kublet: 
+- Agents running on the node.
+- Listen the kubernetes master (eg- POD creation request)
+- Use port 10255
+- Send success/fail response to master.
 
+#### 2- Container Engine:
+- Work with kublet
+- Pulling image
+- Start/Stop containers
+- Exposing containers on ports specified in manifest file.
 
+#### 3- Kube-Proxy:
+- Assign IP to each POD.
+- It requested to assign an IP address to POds (dynamically).
+- Kube-proxy runs on each node and this make sure that each POD will get its own unique IP address.
 
+### POD: (About POD)
+- POD is a smallest unit of kubernetes.
+- POD is a group of one or more containers, that are deployed together on the same host.
+- A cluster is a goup of nodes.
+- A cluster has alleast one worker node and one master node.
+- In Kubernetes the control-unit is the POD not containers.
+- Consist of one or more tightely coupled containers.
+- PODs runs on the nodes which is controlled by master.
+- Kubernetes only know about the PODs (does not know about individual container)
+- Cann't start container without a POD
+- One POD usually contains one container.
+
+#### Multi container PODs:
+- Share access to the memory space.
+- Connect to eachother using localhost <container-port>.
+- Sahre access to same volume.
+- Contains within the POD are deployed in an all or nothing manner.
+- Entire POD is hosted on the same node (shcedular will decide about which node).
+
+#### POD Limitations:
+- No auto-healing ot auto-scalling (by default).
+- POD Crashes.
+
+#### Kubernetes Objects:
+- **Replica-set:** Scalling and healing.
+- **Deployment:** Versioning and rollback.
+- **Service:** Static IP (No temperary).
+- **Volume:** No temperary storage.
+
+#### Important:
+**kubectl:** Single cloud
+**kubeadm:** on premise
+**kubefed:** hu=ybrid cloud
+ 
