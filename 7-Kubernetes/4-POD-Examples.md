@@ -21,10 +21,19 @@ spec:
       command: ["/bin/bash", "-c", "while true; do echo Hello-Chandan; sleep 5 ; done"]
   restartPolicy: Never         # Defaults to Always
 ```
-run below command to create container
-```
-kubectl apply -f pod1.yml
-```
+- Run below command to create container
+  ```
+  kubectl apply -f pod1.yml
+  ```
+- Get pods
+  ```
+  kubectl get pods
+  ```
+- Describe pod
+  ```
+  kubectl describe pod <podname>
+  ```
+  
 ---
 ### Multi container Pod (pod2.xml)
 ```
