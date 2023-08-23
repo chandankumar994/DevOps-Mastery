@@ -4,7 +4,7 @@
 - Labels are the machenism you use to organize the kubernetes objects.
 - A labels is a key-value pair without any predefined meaning that can be attached to the ojbects.
 - Labels are similar to tag in AWS as git when you use a name to quick reference.
-- So you are free to choose levels as you need it to refer on environment which is used for dev or testing or production, refer a product group like- Department A, Department B.
+- So you are free to choose labels as you need it to refer on environment which is used for dev or testing or production, refer a product group like- Department A, Department B.
 - Multiple label can be added to a single object.
 
 #### Example of Labels (delhipod.yml)
