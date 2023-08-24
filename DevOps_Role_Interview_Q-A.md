@@ -362,8 +362,68 @@ Ans: Nexus and JFrog Artifactory.
 Ans: Our front end application is prepared in dot net core and we are using `.NET Core CLI` and `MS build` to build the project using pipeline.
 our middle ware is prepared using java so we are using `Maven` to build it using pipeline.
 
-#### Question-1: 
-Ans:
+#### Question-17: How to manage secret key within azure devops..?
+Ans:Managing secret keys securely is crucial to ensure the protection of sensitive information within Azure DevOps or any other development environment. Azure DevOps provides several mechanisms to help you manage secret keys effectively:
+
+**Azure Key Vault Integration:**
+Azure Key Vault is a cloud service that allows you to securely store and manage keys, secrets, and certificates. You can integrate Azure Key Vault with Azure DevOps to store and retrieve secrets such as API keys, connection strings, and passwords.
+
+Steps:
+  - Create an Azure Key Vault instance in the Azure portal.
+  - Add your secrets to the Key Vault.
+  - In Azure DevOps, configure a service connection to the Azure Key Vault.
+  - Use the Azure Key Vault task in your pipeline to retrieve secrets during runtime.
+
+**Variable Groups:**
+Azure DevOps allows you to create variable groups where you can store secret values. These groups can be linked to multiple pipelines, ensuring consistent and secure usage.
+
+Steps:
+  - In the Azure DevOps project, navigate to 'Pipelines' > 'Library' and create a new variable group.
+  - Add your secret variables to the group.
+  - Link the variable group to the pipelines that require these secrets.
+
+**Pipeline Environment Variables:**
+You can define environment variables directly in your pipeline configuration, keeping them secure by using the variable encryption feature.
+
+Steps:
+
+  - Define secret variables in your pipeline configuration using the variables section.
+  - Use the variables in your pipeline tasks.
+  - Azure DevOps automatically encrypts these variables.
+
+**Secure Files Library:**
+For sensitive files like certificates or private keys, you can use the 'Secure Files' library in Azure DevOps.
+
+Steps:
+
+  - In the Azure DevOps project, navigate to 'Pipelines' > 'Library' and upload your secure files.
+  - Use the 'Download Secure File' task in your pipeline to retrieve these files securely.
+
+
+**Managed Identities:**
+If your pipelines run on Azure resources like virtual machines, you can use managed identities to authenticate with Azure services without storing credentials explicitly.
+
+Steps:
+
+  - Enable managed identity for your resource (e.g., virtual machine).
+  - Grant necessary permissions to the managed identity on the target Azure resources (e.g., Key Vault).
+  - In your pipeline, utilize the managed identity for authenticating with Azure services.
+
+**Parameterize Configuration:**
+Instead of hardcoding secrets directly in your pipeline or code, use parameterized configurations. Store secrets outside of your source code and inject them as needed.
+
+**Remember these general best practices when managing secret keys within Azure DevOps:**
+
+**Limit Access:** Only provide access to secrets for users who require it. Use Azure DevOps role-based permissions to manage access.
+
+**Rotation:** Regularly rotate secret keys and update them in the appropriate locations.
+
+**Auditing:** Enable auditing and monitoring features to track who accesses secrets and when.
+
+**Secure Deployment:** Ensure secrets are used only in secure runtime environments, and not exposed in logs or error messages.
+
+
+
 #### Question-1: 
 Ans:
 #### Question-1: 
