@@ -362,7 +362,7 @@ Ans: Nexus and JFrog Artifactory.
 Ans: Our front end application is prepared in dot net core and we are using `.NET Core CLI` and `MS build` to build the project using pipeline.
 our middle ware is prepared using java so we are using `Maven` to build it using pipeline.
 
-#### Question-17: How to manage secret key within azure devops..?
+### Question-17: How to manage secret key within azure devops..?
 Ans:Managing secret keys securely is crucial to ensure the protection of sensitive information within Azure DevOps or any other development environment. Azure DevOps provides several mechanisms to help you manage secret keys effectively:
 
 **Azure Key Vault Integration:**
