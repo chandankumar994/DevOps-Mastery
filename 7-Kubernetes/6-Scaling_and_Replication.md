@@ -11,5 +11,25 @@ Need for multiple containers/replication helps us with these..
 
 - **Rolling Update:** Update to a service bt replacing pods one by one.
 
-
+### EXAMPLE OF REPLICATION CONTROLLER:
+```
+kind: ReplicationController               
+apiVersion: v1
+metadata:
+  name: myreplica
+spec:
+  replicas: 2            
+  selector:        
+    myname: Chandan Kumar                             
+  template:                
+    metadata:
+      name: testpod6
+      labels:            
+        myname: Chandan
+    spec:
+     containers:
+       - name: c00
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Hello-Chandan; sleep 5 ; done"]
+```
 
