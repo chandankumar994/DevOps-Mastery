@@ -87,7 +87,7 @@ spec:
 - The replication controller only supports `equality-based` selector whereas the replica set supports `set based` selector. ie filtering according to set of values.
 - Replicaset rather than the replication controller is used by other objects like deployment.
 
-### Example of Replicaser (RC) myrs.yml:
+### Example of Replicaset (RC) myrs.yml:
 ```
 kind: ReplicaSet                                    
 apiVersion: apps/v1                            
@@ -113,4 +113,39 @@ spec:
 - Command Run the manifest:
   ```
   kubectl apply -f myrs.yml
+  ```
+
+
+## Deployment (deployment.yml)
+Example:
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+```
+- to execute:
+  ```
+  kubectl apply -f deployment.yml
+  ```
+- To check deployment:
+  ```
+  kubectl get deploy
   ```
