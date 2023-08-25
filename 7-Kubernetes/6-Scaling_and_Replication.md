@@ -11,7 +11,14 @@ Need for multiple containers/replication helps us with these..
 
 - **Rolling Update:** Update to a service bt replacing pods one by one.
 
-### EXAMPLE OF REPLICATION CONTROLLER:
+
+## Replication Controller:
+- A replication controller is an object that enables you to easlyy create multiple pods, then make sure that nymber of pods always exist.
+- If a pod created using replication controller (RC) will be automatically replaced if they does crashed, failed or terminated.
+- RC is recommended if you just want to make sure 1 pos is always running, even after system reboots.
+- You can run RC with 1 replica and the RC will make sure the pod is always running.
+
+### Example of Replication Controller (RC) ChandanRC.yml:
 ```
 kind: ReplicationController               
 apiVersion: v1
@@ -20,16 +27,34 @@ metadata:
 spec:
   replicas: 2            
   selector:        
-    myname: Chandan Kumar                             
+    myname: ChandanRC                            
   template:                
     metadata:
-      name: testpod6
+      name: testpodRC
       labels:            
-        myname: Chandan
+        myname: ChandanRC
     spec:
      containers:
        - name: c00
          image: ubuntu
-         command: ["/bin/bash", "-c", "while true; do echo Hello-Chandan; sleep 5 ; done"]
+         command: ["/bin/bash", "-c", "while true; do echo Hello-ChandanRC; sleep 5 ; done"]
 ```
-
+Command Run the manifest:
+```
+kubectl apply -f ChandanRC.yml
+```
+Command to check replication Controller:
+```
+kubectl get rc
+```
+Describe:
+```
+kybectl describe rc <replicaname>
+kybectl describe rc myreplica
+```
+Note: if you delete any pod RC will automatically create new pod.
+```
+kubectl get pods
+kubectl delete <podname>
+# new pod will be created automatilally after its deletion.
+```
