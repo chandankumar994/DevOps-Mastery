@@ -76,3 +76,7 @@ spec:
 
   kubectl get pods --show-labels
   ```
+- Delele pods:
+  ```
+  kubectl delete -f ChandanRC.yml
+  ```
