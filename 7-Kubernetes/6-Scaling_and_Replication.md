@@ -80,3 +80,37 @@ spec:
   ```
   kubectl delete -f ChandanRC.yml
   ```
+
+
+## Replica Set: (advance version of Replication Controller)
+- Replicaset is a next generation replication controller.
+- The replication controller only supports `equality-based` selector whereas the replica set supports `set based` selector. ie filtering according to set of values.
+- Replicaset rather than the replication controller is used by other objects like deployment.
+
+### Example of Replicaser (RC) myrs.yml:
+```
+kind: ReplicaSet                                    
+apiVersion: apps/v1                            
+metadata:
+  name: myrs
+spec:
+  replicas: 2  
+  selector:                  
+    matchExpressions:                             # these must match the labels
+      - {key: myname, operator: In, values: [Chandan, Anand, Harshita]}
+      - {key: env, operator: NotIn, values: [production]}
+  template:      
+    metadata:
+      name: testpod7
+      labels:              
+        myname: Chandan
+    spec:
+     containers:
+       - name: c00
+         image: ubuntu
+         command: ["/bin/bash", "-c", "while true; do echo Chandan Kumar; sleep 5 ; done"]
+```
+- Command Run the manifest:
+  ```
+  kubectl apply -f myrs.yml
+  ```
