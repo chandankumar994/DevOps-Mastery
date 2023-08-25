@@ -115,7 +115,7 @@ spec:
   kubectl apply -f myrs.yml
   ```
 
-
+---
 ## Deployment (deployment.yml)
 Example: kind must be "Deployment".
 ```
@@ -149,3 +149,12 @@ spec:
   ```
   kubectl get deploy
   ```
+  ![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/0fd94afc-bc3b-4509-bccf-9ecaf3e2d5ad)
+
+### Reasons of deployment failure:
+- Insufficient quota.
+- Readiness probe failure
+- Image Pull error
+- Insufficient permission
+- Limit renges
+- Application runtime mis-configuration.
