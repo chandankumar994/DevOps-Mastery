@@ -56,5 +56,5 @@ Note: if you delete any pod RC will automatically create new pod.
 ```
 kubectl get pods
 kubectl delete <podname>
-# new pod will be created automatilally after its deletion.
+# new pod will be created automatically after its deletion.
 ```
