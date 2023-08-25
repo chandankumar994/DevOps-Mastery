@@ -58,6 +58,12 @@ spec:
   ```
   kubectl exec testpod3 it -c c01 -- /bin/bash
   ```
+- Command to check os version inside pod:
+  ```
+  kubectl exec <pod-name>  -- cat /etc/os-release
+  kubectl exec nginx-deployment-7fb96c846b-n9zwm  -- cat /etc/os-release
+  kubectl exec testpod -- cat /etc/os-release
+  ```
 - Now you can access everything inside the container
   ```
   docker ps
