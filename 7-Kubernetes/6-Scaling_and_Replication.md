@@ -39,22 +39,40 @@ spec:
          image: ubuntu
          command: ["/bin/bash", "-c", "while true; do echo Hello-ChandanRC; sleep 5 ; done"]
 ```
-Command Run the manifest:
-```
-kubectl apply -f ChandanRC.yml
-```
-Command to check replication Controller:
-```
-kubectl get rc
-```
-Describe:
-```
-kybectl describe rc <replicaname>
-kybectl describe rc myreplica
-```
-Note: if you delete any pod RC will automatically create new pod.
-```
-kubectl get pods
-kubectl delete <podname>
-# new pod will be created automatically after its deletion.
-```
+- Command Run the manifest:
+  ```
+  kubectl apply -f ChandanRC.yml
+  ```
+- Command to check replication Controller:
+  ```
+  kubectl get rc
+  ```
+- Describe:
+  ```
+  kybectl describe rc <replicaname>
+  kybectl describe rc myreplica
+  ```
+- Note: if you delete any pod RC will automatically create new pod.
+  ```
+  kubectl get pods
+  kubectl delete <podname>
+  # new pod will be created automatically after its deletion.
+  ```
+- Scale up replicas using command:
+  ```
+  kubectl scale --replicas=4 rc -l myname=ChandanRC
+  
+  #to check:
+  kubectl get rc
+  
+  kubectl get pods
+  #O/P - 4 pod will be in output.
+  ```
+- Scale down replicas using command:
+  ```
+  kubectl scale --replicas=1 rc -l myname=ChandanRC
+  #to check:
+  kubectl get rc
+
+  kubectl get pods --show-labels
+  ```
