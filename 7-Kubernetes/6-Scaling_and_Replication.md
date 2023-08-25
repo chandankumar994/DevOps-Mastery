@@ -117,7 +117,7 @@ spec:
 
 
 ## Deployment (deployment.yml)
-Example:
+Example: kind must be "Deployment".
 ```
 apiVersion: apps/v1
 kind: Deployment
