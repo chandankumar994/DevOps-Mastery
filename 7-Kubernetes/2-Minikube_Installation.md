@@ -78,6 +78,11 @@ chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 ```
 
+Check version:
+
+```
+kubectl version --output=yaml
+```
 ---
 
 ## Step 6: Start Minikube
