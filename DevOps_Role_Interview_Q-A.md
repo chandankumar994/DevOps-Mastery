@@ -482,11 +482,31 @@ Ans:
 
 ### 🚀Section-9 (Docker)🚀
 #### Question-1: How you will optimize docker image size, which is around 10 GB ?
-Ans: 
+Ans: Using multi staged docker build we can optimize the docker image size.
+Example:
+  ```
+  # Stage 1: Build Stage
+  FROM golang:1.16 AS build
+  WORKDIR /app
+  COPY . .
+  RUN go build -o myapp
+  
+  # Stage 2: Final Stage
+  FROM alpine:3.14
+  WORKDIR /app
+  COPY --from=build /app/myapp .
+  CMD ["./myapp"]
+  
+  ```
 #### Question-2: What is docker multi-stage build any why we use it ?
-Ans: 
+Ans: We use this to optimize/reduce the docker image size.
+
+
 
 ### 🚀Section-10 (Kubernetes)🚀
+
+#### Question-1: Difference between ingress and egress network?
+Answer: Ingress controls external access into a network or cluster, while egress manages outbound traffic from the network or cluster.
 
 ### 🚀Section-11 (Grafana and Prometheous)🚀
 
