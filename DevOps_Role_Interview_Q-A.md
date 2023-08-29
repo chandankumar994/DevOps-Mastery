@@ -499,14 +499,27 @@ Example:
   
   ```
 #### Question-2: What is docker multi-stage build any why we use it ?
-Ans: We use this to optimize/reduce the docker image size.
-
+Ans: We use docker multi-stage build to optimize/reduce the docker image size.
 
 
 ### 🚀Section-10 (Kubernetes)🚀
 
 #### Question-1: Difference between ingress and egress network?
 Answer: Ingress controls external access into a network or cluster, while egress manages outbound traffic from the network or cluster.
+
+#### Question-2:
+Answer:
+
+#### Question-3:
+Answer:
+
+#### Question-4:
+Answer:
+
+#### Question-5:
+Answer:
+
+
 
 ### 🚀Section-11 (Grafana and Prometheous)🚀
 
