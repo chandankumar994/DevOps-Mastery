@@ -120,11 +120,19 @@ netstat -ano
 # To check which service is running on 8080 port
 netstat -ano | grep 8080
 ```
-#### Question-13: What is `lsof` command ?
+#### Question-14: What is `lsof` command ?
 **Ans:** This `lsof` command will return the list of open files on the system.
 
-
-
+#### Question-15: What is command to create file in back date ?
+**Ans:** 
+```
+sudo touch --date="2022-01-15 10:30:00" old_file.txt
+```
+#### Question-15: What is command to search multiple strings in one go ?
+**Ans:** 
+```
+grep -E 'ERROR|INFO|WARNING' log.txt
+```
 
 
 ### 🚀Section-2 (GIT - SCM tool)🚀
@@ -150,8 +158,13 @@ netstat -ano | grep 8080
 #### Question-7: What is `git revert` command ? 
 **Ans:** The git revert command is a forward-moving undo operation that offers a safe method of undoing changes. Instead of deleting or orphaning commits in the commit history, a revert will create a new commit that inverses the changes specified.
 
-
-
+#### Question-7: What is the command to delete remote branch ? 
+**Ans:** 
+```
+git push origin -d <branch-name>
+#or
+git push origin --delete <branch-name>
+```
 
 
 
@@ -365,68 +378,17 @@ our middle ware is prepared using java so we are using `Maven` to build it using
 ### Question-17: How to manage secret key within azure devops..?
 Ans:Managing secret keys securely is crucial to ensure the protection of sensitive information within Azure DevOps or any other development environment. Azure DevOps provides several mechanisms to help you manage secret keys effectively:
 
-**Azure Key Vault Integration:**
-Azure Key Vault is a cloud service that allows you to securely store and manage keys, secrets, and certificates. You can integrate Azure Key Vault with Azure DevOps to store and retrieve secrets such as API keys, connection strings, and passwords.
+- Azure Key Vault Integration
+- Variable Groups:
+- Pipeline Environment Variables
+- Secure Files Library
+- Managed Identities
+- Parameterize Configuration
 
-Steps:
-  - Create an Azure Key Vault instance in the Azure portal.
-  - Add your secrets to the Key Vault.
-  - In Azure DevOps, configure a service connection to the Azure Key Vault.
-  - Use the Azure Key Vault task in your pipeline to retrieve secrets during runtime.
-
-**Variable Groups:**
-Azure DevOps allows you to create variable groups where you can store secret values. These groups can be linked to multiple pipelines, ensuring consistent and secure usage.
-
-Steps:
-  - In the Azure DevOps project, navigate to 'Pipelines' > 'Library' and create a new variable group.
-  - Add your secret variables to the group.
-  - Link the variable group to the pipelines that require these secrets.
-
-**Pipeline Environment Variables:**
-You can define environment variables directly in your pipeline configuration, keeping them secure by using the variable encryption feature.
-
-Steps:
-
-  - Define secret variables in your pipeline configuration using the variables section.
-  - Use the variables in your pipeline tasks.
-  - Azure DevOps automatically encrypts these variables.
-
-**Secure Files Library:**
-For sensitive files like certificates or private keys, you can use the 'Secure Files' library in Azure DevOps.
-
-Steps:
-
-  - In the Azure DevOps project, navigate to 'Pipelines' > 'Library' and upload your secure files.
-  - Use the 'Download Secure File' task in your pipeline to retrieve these files securely.
-
-
-**Managed Identities:**
-If your pipelines run on Azure resources like virtual machines, you can use managed identities to authenticate with Azure services without storing credentials explicitly.
-
-Steps:
-
-  - Enable managed identity for your resource (e.g., virtual machine).
-  - Grant necessary permissions to the managed identity on the target Azure resources (e.g., Key Vault).
-  - In your pipeline, utilize the managed identity for authenticating with Azure services.
-
-**Parameterize Configuration:**
-Instead of hardcoding secrets directly in your pipeline or code, use parameterized configurations. Store secrets outside of your source code and inject them as needed.
-
-**Remember these general best practices when managing secret keys within Azure DevOps:**
-
-**Limit Access:** Only provide access to secrets for users who require it. Use Azure DevOps role-based permissions to manage access.
-
-**Rotation:** Regularly rotate secret keys and update them in the appropriate locations.
-
-**Auditing:** Enable auditing and monitoring features to track who accesses secrets and when.
-
-**Secure Deployment:** Ensure secrets are used only in secure runtime environments, and not exposed in logs or error messages.
-
-
-
-#### Question-1: 
+#### Question-18: Write .yml file in Azure DevOps for create a pipeline?
 Ans:
-#### Question-1: 
+
+#### Question-19: What is the use of `azure service connection`?
 **Ans:**
 
 
@@ -471,7 +433,7 @@ Ans:
 #### Question-3: How to create ECS and RDS clusted using terraform ?
 **Ans:**
 
-#### Question-4: 
+#### Question-4: How to manage previously manually created machines using terraform?
 **Ans:**
 
 #### Question-5: 
@@ -482,7 +444,7 @@ Ans:
 
 ### 🚀Section-9 (Docker)🚀
 #### Question-1: How you will optimize docker image size, which is around 10 GB ?
-Ans: Using multi staged docker build we can optimize the docker image size.
+**Ans:** Using multi staged docker build we can optimize the docker image size.
 Example:
   ```
   # Stage 1: Build Stage
@@ -499,7 +461,13 @@ Example:
   
   ```
 #### Question-2: What is docker multi-stage build any why we use it ?
-Ans: We use docker multi-stage build to optimize/reduce the docker image size.
+**Ans:** We use docker multi-stage build to optimize/reduce the docker image size.
+
+#### Question-3: What is the difference between `COPY ` and `ADD` in docker file?
+**Ans:** COPY is a docker file command that copies files from a local source location to a destination in the Docker container. ADD command is used to copy files/directories into a Docker image.
+
+#### Question-4: 
+**Ans:**
 
 
 ### 🚀Section-10 (Kubernetes)🚀
@@ -507,13 +475,13 @@ Ans: We use docker multi-stage build to optimize/reduce the docker image size.
 #### Question-1: Difference between ingress and egress network?
 Answer: Ingress controls external access into a network or cluster, while egress manages outbound traffic from the network or cluster.
 
-#### Question-2:
+#### Question-2: What is the difference between Deployment and replicaset?
 Answer:
 
-#### Question-3:
+#### Question-3: What is difference between replicaset and Demonset?
 Answer:
 
-#### Question-4:
+#### Question-4: 
 Answer:
 
 #### Question-5:
