@@ -385,38 +385,115 @@ Ans:Managing secret keys securely is crucial to ensure the protection of sensiti
 - Managed Identities
 - Parameterize Configuration
 
-#### Question-18: Write .yml file in Azure DevOps for create a pipeline?
+#### Question-18: Write .yml file in Azure DevOps for create a pipeline? (Stages- Take code from git repository, build and compile, run sonar cube, run automated unit test, build artifact, publish artifact and clean the pipeline)
 Ans:
+```
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: Checkout
+  jobs:
+  - job: CheckoutJob
+    steps:
+    - checkout: self
+
+- stage: BuildAndCompile
+  jobs:
+  - job: BuildAndCompileJob
+    steps:
+    - script: |
+        # Add your build and compile commands here
+        echo "Building and compiling..."
+      displayName: 'Build and Compile'
+
+- stage: SonarQubeAnalysis
+  jobs:
+  - job: SonarQubeAnalysisJob
+    steps:
+    - script: |
+        # Add your SonarQube analysis commands here
+        echo "Running SonarQube analysis..."
+      displayName: 'Run SonarQube'
+
+- stage: UnitTests
+  jobs:
+  - job: UnitTestsJob
+    steps:
+    - script: |
+        # Add your automated unit test commands here
+        echo "Running unit tests..."
+      displayName: 'Run Automated Unit Tests'
+
+- stage: BuildArtifact
+  jobs:
+  - job: BuildArtifactJob
+    steps:
+    - script: |
+        # Add commands to build your artifact (e.g., JAR, WAR, EXE, etc.)
+        echo "Building artifact..."
+      displayName: 'Build Artifact'
+
+- stage: PublishArtifact
+  jobs:
+  - job: PublishArtifactJob
+    steps:
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact'
+      inputs:
+        pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        artifactName: 'my-artifact'
+
+- stage: CleanUp
+  jobs:
+  - job: CleanUpJob
+    steps:
+    - script: |
+        # Add cleanup commands if needed
+        echo "Cleaning up..."
+      displayName: 'Clean Up'
+
+```
 
 #### Question-19: What is the use of `azure service connection`?
-**Ans:**
+**Ans:** Azure service connections in Azure DevOps enable secure connections to Azure services, allowing pipelines to interact with resources like Azure VMs, AKS, and more for deployment, management, and automation tasks.
 
 
 
 ### 🚀Section-6 (Jenkins)🚀
 #### Question-1: What is Jenkins?
-**Ans:**
+**Ans:** Jenkins is an open-source automation server that facilitates building, testing, and deploying software, enabling continuous integration and continuous delivery (CI/CD) workflows.
 
 #### Question-2: How to backup Jenkins server with existing data and pipeline ?
-**Ans:**
+**Ans:** To backup a Jenkins server with existing data and pipelines:
+- Stop Jenkins.
+- Copy the entire Jenkins home directory to a backup location.
+- Restart Jenkins.
+- Optionally, create a snapshot of the server if it's running in a virtualized environment.
+- Ensure regular backups to maintain data integrity.
 
 #### Question-3: What are agents in jenkins?
-**Ans:**
+**Ans:** 
+Agents in Jenkins are worker nodes that execute jobs or build tasks, allowing distributed and parallel execution of jobs across multiple machines.
 
-#### Question-4: Why we use agent command in jenkins file ?
-**Ans:**
+#### Question-4: Why we use `agent` command in jenkins file ?
+**Ans:** The `agent` directive in a Jenkinsfile specifies where to run a pipeline, ensuring jobs are executed on the specified agent/node.
 
 #### Question-5: What is the difference between environment variable and parameter in Jenkins ?
-**Ans:**
+**Ans:** Environment variables are set globally for Jenkins jobs, while parameters are user-defined inputs specific to a job, allowing dynamic values and user interactions during job execution.
 
 #### Question-6: What is the difference between pre-defined and user-defined variables in Jenkins ?
-**Ans:**
+**Ans:** 
+Pre-defined variables in Jenkins are system-provided, like environment variables. User-defined variables are custom, set by users in jobs to store and pass data during job execution.
 
 #### Question-7: Why we use `test` and `choice` parameter in jenkins ?
-**Ans:**
+**Ans:** `test` and `choice` parameters in Jenkins allow users to input data or make selections during job execution, making builds and deployments more customizable and dynamic.
 
 #### Question-8: What is `section` argument in Jenkins ?
-**Ans:**
+**Ans:** In Jenkins, the `section` argument is used to organize and group various elements within a pipeline script, enhancing code readability and maintainability.
 
 #### Question-9: 
 **Ans:**
@@ -471,26 +548,34 @@ Example:
 
 
 ### 🚀Section-10 (Kubernetes)🚀
+#### Question-1: Explain the kubernetes architectire?
+Answer:
+![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/a02c14ee-15e4-4a86-86eb-7c3e9ebc0f48)
 
-#### Question-1: Difference between ingress and egress network?
+
+#### Question-2: Difference between ingress and egress network?
 Answer: Ingress controls external access into a network or cluster, while egress manages outbound traffic from the network or cluster.
 
-#### Question-2: What is the difference between Deployment and replicaset?
+#### Question-3: What is the difference between Deployment and replicaset?
+**Answer:** A Deployment manages application updates and rollbacks, while a ReplicaSet ensures a specified number of pod replicas are running. Deployments provide higher-level control and ease of management compared to ReplicaSets.
+
+#### Question-4: What is difference between replicaset and DemonSet?
+**Answer:** A ReplicaSet ensures a specified number of pod replicas are running, while a DaemonSet ensures at least one pod runs on each node in a cluster.
+
+#### Question-5: 
 Answer:
 
-#### Question-3: What is difference between replicaset and Demonset?
-Answer:
-
-#### Question-4: 
-Answer:
-
-#### Question-5:
+#### Question-6:
 Answer:
 
 
 
 ### 🚀Section-11 (Grafana and Prometheous)🚀
+#### Question-1: Are you aware about any monitoring tool?
+Answer: Yes, 
 
+#### Question-2: Which tool you are using in your project for monitoring?
+Answer: 
 
 
 ### 🚀Section-12 (Scenario based Question)🚀
