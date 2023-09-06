@@ -502,16 +502,16 @@ Pre-defined variables in Jenkins are system-provided, like environment variables
 
 ### 🚀Section-8 (terraform)🚀
 #### Question-1: How to provision infrastructure for any subscription within azure using terraform?
-**Ans:** 
+**Ans:** To provision Azure infrastructure for any subscription using Terraform, set the subscription ID as an environment variable or in the provider block. Then, use Terraform configurations to define and deploy the desired resources.
 
 #### Question-2: What is state file locking in terraform ?
-**Ans:** 
+**Ans:** State file locking in Terraform prevents concurrent modifications to the same infrastructure by multiple users, ensuring data consistency and avoiding conflicts.
 
 #### Question-3: How to create ECS and RDS clusted using terraform ?
-**Ans:**
+**Ans:** To create an Amazon ECS cluster and RDS database with Terraform, define the respective resource configurations in your Terraform code using the aws_ecs_cluster and aws_db_instance resources, specifying required parameters, such as cluster name and RDS settings.
 
 #### Question-4: How to manage previously manually created machines using terraform?
-**Ans:**
+**Ans:** To manage manually created machines with Terraform, define their configuration in Terraform code, specifying the desired state. Run terraform import to import their existing state, then use Terraform to apply, modify, or destroy resources as needed.
 
 #### Question-5: 
 **Ans:**
@@ -562,11 +562,11 @@ Answer: Ingress controls external access into a network or cluster, while egress
 #### Question-4: What is difference between replicaset and DemonSet?
 **Answer:** A ReplicaSet ensures a specified number of pod replicas are running, while a DaemonSet ensures at least one pod runs on each node in a cluster.
 
-#### Question-5: 
-Answer:
+#### Question-5: How pods communicate between each-other in microservice architecture?
+Answer: Pods in a microservice architecture typically communicate through APIs over the network, using protocols like HTTP/HTTPS or gRPC. Kubernetes services and DNS help with discovery and load balancing.
 
-#### Question-6:
-Answer:
+#### Question-6: Difference between stateful and stateless microservices in kubernetes?
+Answer: Stateful microservices in Kubernetes manage and store persistent data, often requiring stable network identities and storage. Stateless microservices, on the other hand, lack persistent data and can be easily replaced or scaled without impacting data integrity or consistency.
 
 
 
