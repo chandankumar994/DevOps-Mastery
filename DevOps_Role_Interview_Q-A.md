@@ -265,7 +265,7 @@ Use Network Load Balancer (NLB) for low-latency, TCP/UDP-based services
 #### Question-16: How to configure SNS (Simple Notification Service) ?
 **Ans:** To configure SNS, create a topic, add subscribers, set access policies, and publish messages to the topic via the AWS Management Console or API, enabling scalable, flexible notification delivery.
 
-#### Question-17: 
+#### Question-17: Waht is the difference between group policy and ACL?
 **Ans:**
 
 #### Question-18: 
@@ -543,9 +543,11 @@ Example:
 #### Question-3: What is the difference between `COPY ` and `ADD` in docker file?
 **Ans:** COPY is a docker file command that copies files from a local source location to a destination in the Docker container. ADD command is used to copy files/directories into a Docker image.
 
-#### Question-4: 
+#### Question-4: Why we use  `CMD` in dockerfile ?
 **Ans:**
 
+#### Question-5: 
+**Ans:**
 
 ### 🚀Section-10 (Kubernetes)🚀
 #### Question-1: Explain the kubernetes architectire?
@@ -563,12 +565,22 @@ Answer: Ingress controls external access into a network or cluster, while egress
 **Answer:** A ReplicaSet ensures a specified number of pod replicas are running, while a DaemonSet ensures at least one pod runs on each node in a cluster.
 
 #### Question-5: How pods communicate between each-other in microservice architecture?
-Answer: Pods in a microservice architecture typically communicate through APIs over the network, using protocols like HTTP/HTTPS or gRPC. Kubernetes services and DNS help with discovery and load balancing.
+**Answer:** Pods in a microservice architecture typically communicate through APIs over the network, using protocols like HTTP/HTTPS or gRPC. Kubernetes services and DNS help with discovery and load balancing.
 
 #### Question-6: Difference between stateful and stateless microservices in kubernetes?
-Answer: Stateful microservices in Kubernetes manage and store persistent data, often requiring stable network identities and storage. Stateless microservices, on the other hand, lack persistent data and can be easily replaced or scaled without impacting data integrity or consistency.
+**Answer:** Stateful microservices in Kubernetes manage and store persistent data, often requiring stable network identities and storage. Stateless microservices, on the other hand, lack persistent data and can be easily replaced or scaled without impacting data integrity or consistency.
 
+#### Question-7: Why new POD is being created only on workder node not on masternode (Control-plane)?
+**Answer:**
 
+#### Question-8: How to copy log from container to local machine ?
+**Answer:**
+
+#### Question-9: question?
+**Answer:**
+
+#### Question-10: question?
+**Answer:**
 
 ### 🚀Section-11 (Grafana and Prometheous)🚀
 #### Question-1: Are you aware about any monitoring tool?
