@@ -576,10 +576,16 @@ Answer: Ingress controls external access into a network or cluster, while egress
 #### Question-8: How to copy log from container to local machine ?
 **Answer:**
 
-#### Question-9: question?
+#### Question-9: What is the difference between monolithic and microservice architecture?
 **Answer:**
 
 #### Question-10: question?
+**Answer:**
+
+#### Question-11: question?
+**Answer:**
+
+#### Question-12: question?
 **Answer:**
 
 ### 🚀Section-11 (Grafana and Prometheous)🚀
