@@ -265,8 +265,8 @@ Use Network Load Balancer (NLB) for low-latency, TCP/UDP-based services
 #### Question-16: How to configure SNS (Simple Notification Service) ?
 **Ans:** To configure SNS, create a topic, add subscribers, set access policies, and publish messages to the topic via the AWS Management Console or API, enabling scalable, flexible notification delivery.
 
-#### Question-17: Waht is the difference between group policy and ACL?
-**Ans:**
+#### Question-17: What is the difference between group policy and ACL?
+**Ans:** Group Policy in AWS refers to IAM (Identity and Access Management) policies that define permissions for users, roles, or groups. ACL (Access Control List) is a legacy way to manage permissions at the S3 bucket or object level. IAM policies offer more granularity and control compared to ACLs.
 
 #### Question-18: 
 **Ans:**
@@ -544,7 +544,7 @@ Example:
 **Ans:** COPY is a docker file command that copies files from a local source location to a destination in the Docker container. ADD command is used to copy files/directories into a Docker image.
 
 #### Question-4: Why we use  `CMD` in dockerfile ?
-**Ans:**
+**Ans:**  `CMD` in a Dockerfile specifies the default command to run when a container starts, defining the container's primary executable process.
 
 #### Question-5: 
 **Ans:**
@@ -553,7 +553,6 @@ Example:
 #### Question-1: Explain the kubernetes architectire?
 Answer:
 ![image](https://github.com/chandankumar994/DevOps-Mastery/assets/15160387/a02c14ee-15e4-4a86-86eb-7c3e9ebc0f48)
-
 
 #### Question-2: Difference between ingress and egress network?
 Answer: Ingress controls external access into a network or cluster, while egress manages outbound traffic from the network or cluster.
@@ -571,13 +570,15 @@ Answer: Ingress controls external access into a network or cluster, while egress
 **Answer:** Stateful microservices in Kubernetes manage and store persistent data, often requiring stable network identities and storage. Stateless microservices, on the other hand, lack persistent data and can be easily replaced or scaled without impacting data integrity or consistency.
 
 #### Question-7: Why new POD is being created only on workder node not on masternode (Control-plane)?
-**Answer:**
+**Answer:** Kubernetes reserves the master (control-plane) nodes for system components and schedules application pods on worker nodes for isolation and resource allocation.
 
 #### Question-8: How to copy log from container to local machine ?
-**Answer:**
+**Answer:** 
+- Use kubectl logs to fetch the container logs.
+- Redirect the output to a local file using > or use kubectl cp to copy logs directly.
 
 #### Question-9: What is the difference between monolithic and microservice architecture?
-**Answer:**
+**Answer:** Monolithic: Single, tightly-coupled application. Microservices: Multiple, loosely-coupled services. Monolithic's all-in-one; microservices are modular, scalable, and independent.
 
 #### Question-10: question?
 **Answer:**
@@ -590,10 +591,10 @@ Answer: Ingress controls external access into a network or cluster, while egress
 
 ### 🚀Section-11 (Grafana and Prometheous)🚀
 #### Question-1: Are you aware about any monitoring tool?
-Answer: Yes, 
+Answer: Yes, I'm familiar with various monitoring tools, including Prometheus, Grafana, Nagios, Zabbix, and New Relic, commonly used for tracking system performance and health
 
 #### Question-2: Which tool you are using in your project for monitoring?
-Answer: 
+Answer: In our project, we rely on Prometheus for data collection and Grafana for visualization. These tools effectively monitor and provide insights into our system's performance and health.
 
 
 ### 🚀Section-12 (Scenario based Question)🚀
