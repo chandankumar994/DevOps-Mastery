@@ -289,8 +289,13 @@ Use Network Load Balancer (NLB) for low-latency, TCP/UDP-based services
 #### Question-17: What is the difference between group policy and ACL?
 **Ans:** Group Policy in AWS refers to IAM (Identity and Access Management) policies that define permissions for users, roles, or groups. ACL (Access Control List) is a legacy way to manage permissions at the S3 bucket or object level. IAM policies offer more granularity and control compared to ACLs.
 
-#### Question-18: 
-**Ans:**
+#### Question-18: what is data set in azure?
+**Ans:** 
+In Microsoft Azure, a "data set" typically refers to a collection of data organized and managed within Azure services or tools. The specific meaning of "data set" can vary depending on the context and the Azure service being used.
+- Azure Datasets
+- Azure Data Factory Data Sets
+- Azure Machine Learning Data Sets
+- Azure Databricks Data Sets
 
 #### Question-19: 
 **Ans:**
