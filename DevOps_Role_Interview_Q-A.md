@@ -575,8 +575,15 @@ Example:
 #### Question-4: Why we use  `CMD` in dockerfile ?
 **Ans:**  `CMD` in a Dockerfile specifies the default command to run when a container starts, defining the container's primary executable process.
 
-#### Question-5: 
+#### Question-5: Write a docker file?
 **Ans:**
+  ```
+  # Use a lightweight Linux distribution as the base image
+  FROM alpine:latest
+  
+  # Run the command to print "Hello, World!" when the container starts
+  CMD ["echo", "Hello, World!"]
+  ```
 
 ### 🚀Section-10 (Kubernetes)🚀
 #### Question-1: Explain the kubernetes architectire?
