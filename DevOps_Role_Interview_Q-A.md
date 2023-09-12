@@ -134,6 +134,27 @@ sudo touch --date="2022-01-15 10:30:00" old_file.txt
 grep -E 'ERROR|INFO|WARNING' log.txt
 ```
 
+#### Question-16: Write a program that with count A E I O U in given .txt file which contains a paragraph ?
+**Ans:** 
+```
+# Paragrabh is there in file2.txt file
+input_file=file3.txt
+
+# Use grep to extract the vowels and count them
+a_count=$(grep -o -i 'a' "$input_file" | wc -l)
+e_count=$(grep -o -i 'e' "$input_file" | wc -l)
+i_count=$(grep -o -i 'i' "$input_file" | wc -l)
+o_count=$(grep -o -i 'o' "$input_file" | wc -l)
+u_count=$(grep -o -i 'u' "$input_file" | wc -l)
+
+# Display the counts
+echo "A: $a_count"
+echo "E: $e_count"
+echo "I: $i_count"
+echo "O: $o_count"
+echo "U: $u_count"
+```
+
 
 ### 🚀Section-2 (GIT - SCM tool)🚀
 
@@ -513,11 +534,14 @@ Pre-defined variables in Jenkins are system-provided, like environment variables
 #### Question-4: How to manage previously manually created machines using terraform?
 **Ans:** To manage manually created machines with Terraform, define their configuration in Terraform code, specifying the desired state. Run terraform import to import their existing state, then use Terraform to apply, modify, or destroy resources as needed.
 
-#### Question-5: 
-**Ans:**
+#### Question-5: How to create 100 machines using terraform without providing count?
+**Ans:** If you want to create a specific number of machines (e.g., 100) without explicitly using the count argument in your Terraform configuration, you can achieve this by using a loop construct in the language you're using to generate your Terraform code. Typically, you'd do this using external scripting or a configuration management tool in combination with Terraform.
 
-#### Question-6: 
-**Ans:**
+#### Question-6: What is provisioner in terraform ?
+**Ans:** 
+In Terraform, a "provisioner" is a set of configuration options that allow you to define how certain actions should be taken on a resource after it's been created. Provisioners are commonly used to perform tasks like software installation, configuration, or other post-resource creation actions.
+- Local-exec Provisioner
+- Remote-exec Provisioner
 
 ### 🚀Section-9 (Docker)🚀
 #### Question-1: How you will optimize docker image size, which is around 10 GB ?
