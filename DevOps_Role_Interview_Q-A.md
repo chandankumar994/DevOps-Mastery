@@ -154,6 +154,12 @@ echo "I: $i_count"
 echo "O: $o_count"
 echo "U: $u_count"
 ```
+#### Question-17: what is the difference between `kill <PID>` and `kill -9 <PID>`  ?
+**Ans:** kill with a PID sends a signal that allows the process to gracefully terminate, while kill -9 with a PID forcefully terminates the process without giving it a chance to clean up. 
+
+#### Question-18:   ?
+**Ans:**
+
 
 
 ### 🚀Section-2 (GIT - SCM tool)🚀
@@ -521,7 +527,16 @@ Pre-defined variables in Jenkins are system-provided, like environment variables
 #### Question-8: What is `section` argument in Jenkins ?
 **Ans:** In Jenkins, the `section` argument is used to organize and group various elements within a pipeline script, enhancing code readability and maintainability.
 
-#### Question-9: 
+#### Question-9: Explain Jenkins master and slave architecture?
+**Ans:** Jenkins master-slave architecture is a distributed system for automating software builds and deployments. The master server manages jobs and schedules them to run on multiple slave nodes. Slaves execute tasks and report back to the master. This setup improves scalability, load balancing, and enables parallel processing for faster and more efficient CI/CD pipelines.
+
+#### Question-10: ?
+**Ans:**
+
+#### Question-11: ?
+**Ans:**
+
+#### Question-12: ?
 **Ans:**
 
 ### 🚀Section-7 (Ansible)🚀
@@ -542,11 +557,12 @@ Pre-defined variables in Jenkins are system-provided, like environment variables
 #### Question-5: How to create 100 machines using terraform without providing count?
 **Ans:** If you want to create a specific number of machines (e.g., 100) without explicitly using the count argument in your Terraform configuration, you can achieve this by using a loop construct in the language you're using to generate your Terraform code. Typically, you'd do this using external scripting or a configuration management tool in combination with Terraform.
 
-#### Question-6: What is provisioner in terraform ?
+#### Question-6: What are provisioner in terraform ?
 **Ans:** 
 In Terraform, a "provisioner" is a set of configuration options that allow you to define how certain actions should be taken on a resource after it's been created. Provisioners are commonly used to perform tasks like software installation, configuration, or other post-resource creation actions.
 - Local-exec Provisioner
 - Remote-exec Provisioner
+
 
 ### 🚀Section-9 (Docker)🚀
 #### Question-1: How you will optimize docker image size, which is around 10 GB ?
@@ -583,6 +599,16 @@ Example:
   
   # Run the command to print "Hello, World!" when the container starts
   CMD ["echo", "Hello, World!"]
+  ```
+
+#### Question-5: How to assign a specific port to a docker container?
+**Ans:**
+  ```
+  docker run -p <host_port>:<container_port> <image_name>
+
+  #Example
+  docker run -p 8081:8080 myapp
+  
   ```
 
 ### 🚀Section-10 (Kubernetes)🚀
