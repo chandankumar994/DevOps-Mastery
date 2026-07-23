@@ -61,7 +61,7 @@ Kubernetes is a container management tool, supports multiple containerization to
 ### Working with Kubernetes:
 - We create manifast file (.yaml/.yml).
 - apply this to cluster (to master) to bring bring into desigred state.
-- POD runs on nodes, which is controlled by smaster.
+- POD runs on nodes, which is controlled by master.
 
 ### Role of master node:
 - Kubernetes cluster contains containersrunning on VM-Instance/Bare-Metal/Cloud-Instance/All-Mixedup.
@@ -71,7 +71,7 @@ Kubernetes is a container management tool, supports multiple containerization to
 - Master runs Controll-Plane to run cluster smoothly.
 
 ### Components of Control-Plane (Master):
-- Kubw-Api-Server
+- Kube-Api-Server
 - etcd
 - Kube-schedular
 - Controller-manager
