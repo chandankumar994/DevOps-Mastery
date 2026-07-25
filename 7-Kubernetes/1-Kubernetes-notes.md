@@ -155,7 +155,7 @@ Node is going to run 3 important piece of software/processes.
 - **Replica-set:** Scalling and healing.
 - **Deployment:** Versioning and rollback.
 - **Service:** Static IP (no temporary).
-- **Volume:** No temperary storage.
+- **Volume:** Non epherneral storage.
 
 #### Important:
 - **kubectl:** Single cloud
